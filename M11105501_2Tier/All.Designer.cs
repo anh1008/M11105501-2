@@ -43,13 +43,13 @@
             this.detail2BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.listDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.systemIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.continentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numComputerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.location1BindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.lLSDataSet2 = new M11105501_2Tier.lLSDataSet();
+            this.fKDetail1ListID6E01572DBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.list1BindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.q5DataSet = new M11105501_2Tier.Q5DataSet();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.listBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.lLSDataSet3 = new M11105501_2Tier.lLSDataSet();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,6 +58,30 @@
             this.continentBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.concouDataSet = new M11105501_2Tier.ConcouDataSet();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.countryListBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.cLDetailDataSet2 = new M11105501_2Tier.CLDetailDataSet();
+            this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.segmentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numCoresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.detail11BindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.cLDetailDataSet1 = new M11105501_2Tier.CLDetailDataSet();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.list1BindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rankDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fKComputersListI787EE5A0BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.list1BindingSource6 = new System.Windows.Forms.BindingSource(this.components);
+            this.q5_2DataSet = new M11105501_2Tier.Q5_2DataSet();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.fKDetail1ListID6E01572DBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.location1BindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.lLSDataSet2 = new M11105501_2Tier.lLSDataSet();
+            this.listBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.lLSDataSet3 = new M11105501_2Tier.lLSDataSet();
             this.detail11BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.d1L1DataSet1 = new M11105501_2Tier.D1L1DataSet();
             this.list1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -118,8 +142,6 @@
             this.detail_1TableAdapter = new M11105501_2Tier.D1L1DataSetTableAdapters.Detail_1TableAdapter();
             this.detail11BindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.detail_11TableAdapter = new M11105501_2Tier.D1L1DataSetTableAdapters.Detail_11TableAdapter();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.cLDetailDataSet = new M11105501_2Tier.CLDetailDataSet();
             this.countryListBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.countryListTableAdapter = new M11105501_2Tier.CLDetailDataSetTableAdapters.CountryListTableAdapter();
@@ -127,17 +149,29 @@
             this.list_1TableAdapter1 = new M11105501_2Tier.CLDetailDataSetTableAdapters.list_1TableAdapter();
             this.countryListBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.list1BindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
-            this.cLDetailDataSet1 = new M11105501_2Tier.CLDetailDataSet();
             this.cLDetailDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.detail11BindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.detail_11TableAdapter1 = new M11105501_2Tier.CLDetailDataSetTableAdapters.Detail_11TableAdapter();
-            this.segmentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numCoresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cLDetailDataSet2 = new M11105501_2Tier.CLDetailDataSet();
-            this.list1BindingSource4 = new System.Windows.Forms.BindingSource(this.components);
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.countryListBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.list_1TableAdapter2 = new M11105501_2Tier.Q5DataSetTableAdapters.list_1TableAdapter();
+            this.fKDetail1ListID6E01572DBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.detail_1TableAdapter1 = new M11105501_2Tier.Q5DataSetTableAdapters.Detail_1TableAdapter();
+            this.q5_1DataSet = new M11105501_2Tier.Q5_1DataSet();
+            this.tOP500BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tOP500TableAdapter = new M11105501_2Tier.Q5_1DataSetTableAdapters.TOP500TableAdapter();
+            this.tOP500BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.systemBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.systemTableAdapter = new M11105501_2Tier.Q5_1DataSetTableAdapters.SystemTableAdapter();
+            this.fKTOP500SystemID48CFD27EBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.list_1TableAdapter3 = new M11105501_2Tier.Q5_2DataSetTableAdapters.list_1TableAdapter();
+            this.computers_1TableAdapter = new M11105501_2Tier.Q5_2DataSetTableAdapters.Computers_1TableAdapter();
+            this.fillByToolStrip = new System.Windows.Forms.ToolStrip();
+            this.rankHToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.rankHToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
+            this.rankLToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.rankLToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
+            this.listIDToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.listIDToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
+            this.fillByToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -148,15 +182,31 @@
             ((System.ComponentModel.ISupportInitialize)(this.detail2BindingSource)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.location1BindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lLSDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listBindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lLSDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKDetail1ListID6E01572DBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.list1BindingSource5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.q5DataSet)).BeginInit();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKcountryContine693CA210BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.continentBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.concouDataSet)).BeginInit();
+            this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.countryListBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cLDetailDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detail11BindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cLDetailDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.list1BindingSource4)).BeginInit();
+            this.tabPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKComputersListI787EE5A0BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.list1BindingSource6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.q5_2DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKDetail1ListID6E01572DBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.location1BindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lLSDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lLSDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detail11BindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.d1L1DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.list1BindingSource1)).BeginInit();
@@ -200,19 +250,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.fKDetail1Contine6383C8BABindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKDetail1ListID6E01572DBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detail11BindingSource2)).BeginInit();
-            this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cLDetailDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.countryListBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.list1BindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.countryListBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.list1BindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cLDetailDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cLDetailDataSet1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.detail11BindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cLDetailDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.list1BindingSource4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.countryListBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKDetail1ListID6E01572DBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.q5_1DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tOP500BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tOP500BindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.systemBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKTOP500SystemID48CFD27EBindingSource)).BeginInit();
+            this.fillByToolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -222,6 +272,7 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Location = new System.Drawing.Point(3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -360,9 +411,10 @@
             this.dataGridView3.AutoGenerateColumns = false;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.continentDataGridViewTextBoxColumn,
-            this.numComputerDataGridViewTextBoxColumn});
-            this.dataGridView3.DataSource = this.location1BindingSource2;
+            this.listDataGridViewTextBoxColumn2,
+            this.systemIDDataGridViewTextBoxColumn1,
+            this.continentDataGridViewTextBoxColumn});
+            this.dataGridView3.DataSource = this.fKDetail1ListID6E01572DBindingSource3;
             this.dataGridView3.Location = new System.Drawing.Point(56, 35);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.ReadOnly = true;
@@ -371,55 +423,59 @@
             this.dataGridView3.Size = new System.Drawing.Size(703, 367);
             this.dataGridView3.TabIndex = 1;
             // 
+            // listDataGridViewTextBoxColumn2
+            // 
+            this.listDataGridViewTextBoxColumn2.DataPropertyName = "List";
+            this.listDataGridViewTextBoxColumn2.HeaderText = "List";
+            this.listDataGridViewTextBoxColumn2.MinimumWidth = 8;
+            this.listDataGridViewTextBoxColumn2.Name = "listDataGridViewTextBoxColumn2";
+            this.listDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.listDataGridViewTextBoxColumn2.Width = 150;
+            // 
+            // systemIDDataGridViewTextBoxColumn1
+            // 
+            this.systemIDDataGridViewTextBoxColumn1.DataPropertyName = "SystemID";
+            this.systemIDDataGridViewTextBoxColumn1.HeaderText = "SystemID";
+            this.systemIDDataGridViewTextBoxColumn1.MinimumWidth = 8;
+            this.systemIDDataGridViewTextBoxColumn1.Name = "systemIDDataGridViewTextBoxColumn1";
+            this.systemIDDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.systemIDDataGridViewTextBoxColumn1.Width = 150;
+            // 
             // continentDataGridViewTextBoxColumn
             // 
-            this.continentDataGridViewTextBoxColumn.DataPropertyName = "continent";
-            this.continentDataGridViewTextBoxColumn.HeaderText = "continent";
+            this.continentDataGridViewTextBoxColumn.DataPropertyName = "Continent";
+            this.continentDataGridViewTextBoxColumn.HeaderText = "Continent";
             this.continentDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.continentDataGridViewTextBoxColumn.Name = "continentDataGridViewTextBoxColumn";
             this.continentDataGridViewTextBoxColumn.ReadOnly = true;
             this.continentDataGridViewTextBoxColumn.Width = 150;
             // 
-            // numComputerDataGridViewTextBoxColumn
+            // fKDetail1ListID6E01572DBindingSource3
             // 
-            this.numComputerDataGridViewTextBoxColumn.DataPropertyName = "numComputer";
-            this.numComputerDataGridViewTextBoxColumn.HeaderText = "numComputer";
-            this.numComputerDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.numComputerDataGridViewTextBoxColumn.Name = "numComputerDataGridViewTextBoxColumn";
-            this.numComputerDataGridViewTextBoxColumn.ReadOnly = true;
-            this.numComputerDataGridViewTextBoxColumn.Width = 150;
+            this.fKDetail1ListID6E01572DBindingSource3.DataMember = "FK__Detail_1__ListID__6E01572D";
+            this.fKDetail1ListID6E01572DBindingSource3.DataSource = this.list1BindingSource5;
             // 
-            // location1BindingSource2
+            // list1BindingSource5
             // 
-            this.location1BindingSource2.DataMember = "Location1";
-            this.location1BindingSource2.DataSource = this.lLSDataSet2;
+            this.list1BindingSource5.DataMember = "list_1";
+            this.list1BindingSource5.DataSource = this.q5DataSet;
             // 
-            // lLSDataSet2
+            // q5DataSet
             // 
-            this.lLSDataSet2.DataSetName = "lLSDataSet";
-            this.lLSDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.q5DataSet.DataSetName = "Q5DataSet";
+            this.q5DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // comboBox1
             // 
-            this.comboBox1.DataSource = this.listBindingSource3;
+            this.comboBox1.DataSource = this.list1BindingSource5;
             this.comboBox1.DisplayMember = "value";
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(56, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(703, 26);
             this.comboBox1.TabIndex = 0;
-            this.comboBox1.ValueMember = "value";
+            this.comboBox1.ValueMember = "ID";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
-            // 
-            // listBindingSource3
-            // 
-            this.listBindingSource3.DataMember = "list";
-            this.listBindingSource3.DataSource = this.lLSDataSet3;
-            // 
-            // lLSDataSet3
-            // 
-            this.lLSDataSet3.DataSetName = "lLSDataSet";
-            this.lLSDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tabPage4
             // 
@@ -495,6 +551,205 @@
             this.comboBox2.Size = new System.Drawing.Size(619, 26);
             this.comboBox2.TabIndex = 0;
             this.comboBox2.ValueMember = "ContinentID";
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.comboBox3);
+            this.tabPage5.Controls.Add(this.dataGridView5);
+            this.tabPage5.Controls.Add(this.comboBox4);
+            this.tabPage5.Location = new System.Drawing.Point(4, 28);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(803, 434);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Q4";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.DataSource = this.countryListBindingSource2;
+            this.comboBox3.DisplayMember = "Country";
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(1, 4);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(410, 26);
+            this.comboBox3.TabIndex = 3;
+            this.comboBox3.ValueMember = "CountryID";
+            // 
+            // countryListBindingSource2
+            // 
+            this.countryListBindingSource2.DataMember = "CountryList";
+            this.countryListBindingSource2.DataSource = this.cLDetailDataSet2;
+            // 
+            // cLDetailDataSet2
+            // 
+            this.cLDetailDataSet2.DataSetName = "CLDetailDataSet";
+            this.cLDetailDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dataGridView5
+            // 
+            this.dataGridView5.AllowUserToAddRows = false;
+            this.dataGridView5.AllowUserToDeleteRows = false;
+            this.dataGridView5.AutoGenerateColumns = false;
+            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.segmentDataGridViewTextBoxColumn,
+            this.numCoresDataGridViewTextBoxColumn});
+            this.dataGridView5.DataSource = this.detail11BindingSource3;
+            this.dataGridView5.Location = new System.Drawing.Point(-4, 36);
+            this.dataGridView5.Name = "dataGridView5";
+            this.dataGridView5.ReadOnly = true;
+            this.dataGridView5.RowHeadersWidth = 62;
+            this.dataGridView5.RowTemplate.Height = 31;
+            this.dataGridView5.Size = new System.Drawing.Size(801, 377);
+            this.dataGridView5.TabIndex = 2;
+            // 
+            // segmentDataGridViewTextBoxColumn
+            // 
+            this.segmentDataGridViewTextBoxColumn.DataPropertyName = "Segment";
+            this.segmentDataGridViewTextBoxColumn.HeaderText = "Segment";
+            this.segmentDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.segmentDataGridViewTextBoxColumn.Name = "segmentDataGridViewTextBoxColumn";
+            this.segmentDataGridViewTextBoxColumn.ReadOnly = true;
+            this.segmentDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // numCoresDataGridViewTextBoxColumn
+            // 
+            this.numCoresDataGridViewTextBoxColumn.DataPropertyName = "numCores";
+            this.numCoresDataGridViewTextBoxColumn.HeaderText = "numCores";
+            this.numCoresDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.numCoresDataGridViewTextBoxColumn.Name = "numCoresDataGridViewTextBoxColumn";
+            this.numCoresDataGridViewTextBoxColumn.ReadOnly = true;
+            this.numCoresDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // detail11BindingSource3
+            // 
+            this.detail11BindingSource3.DataMember = "Detail_11";
+            this.detail11BindingSource3.DataSource = this.cLDetailDataSet1;
+            // 
+            // cLDetailDataSet1
+            // 
+            this.cLDetailDataSet1.DataSetName = "CLDetailDataSet";
+            this.cLDetailDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.DataSource = this.list1BindingSource4;
+            this.comboBox4.DisplayMember = "value";
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(417, 4);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(380, 26);
+            this.comboBox4.TabIndex = 1;
+            this.comboBox4.ValueMember = "ListID";
+            // 
+            // list1BindingSource4
+            // 
+            this.list1BindingSource4.DataMember = "list_1";
+            this.list1BindingSource4.DataSource = this.cLDetailDataSet2;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.AutoScroll = true;
+            this.tabPage6.Controls.Add(this.label1);
+            this.tabPage6.Controls.Add(this.fillByToolStrip);
+            this.tabPage6.Controls.Add(this.dataGridView6);
+            this.tabPage6.Controls.Add(this.comboBox5);
+            this.tabPage6.Location = new System.Drawing.Point(4, 28);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(803, 434);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Q5";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView6
+            // 
+            this.dataGridView6.AllowUserToAddRows = false;
+            this.dataGridView6.AllowUserToDeleteRows = false;
+            this.dataGridView6.AutoGenerateColumns = false;
+            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nameDataGridViewTextBoxColumn1,
+            this.rankDataGridViewTextBoxColumn});
+            this.dataGridView6.DataSource = this.fKComputersListI787EE5A0BindingSource;
+            this.dataGridView6.Location = new System.Drawing.Point(17, 81);
+            this.dataGridView6.Name = "dataGridView6";
+            this.dataGridView6.ReadOnly = true;
+            this.dataGridView6.RowHeadersWidth = 62;
+            this.dataGridView6.RowTemplate.Height = 31;
+            this.dataGridView6.Size = new System.Drawing.Size(749, 347);
+            this.dataGridView6.TabIndex = 1;
+            // 
+            // nameDataGridViewTextBoxColumn1
+            // 
+            this.nameDataGridViewTextBoxColumn1.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn1.HeaderText = "name";
+            this.nameDataGridViewTextBoxColumn1.MinimumWidth = 8;
+            this.nameDataGridViewTextBoxColumn1.Name = "nameDataGridViewTextBoxColumn1";
+            this.nameDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.nameDataGridViewTextBoxColumn1.Width = 150;
+            // 
+            // rankDataGridViewTextBoxColumn
+            // 
+            this.rankDataGridViewTextBoxColumn.DataPropertyName = "Rank";
+            this.rankDataGridViewTextBoxColumn.HeaderText = "Rank";
+            this.rankDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.rankDataGridViewTextBoxColumn.Name = "rankDataGridViewTextBoxColumn";
+            this.rankDataGridViewTextBoxColumn.ReadOnly = true;
+            this.rankDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // fKComputersListI787EE5A0BindingSource
+            // 
+            this.fKComputersListI787EE5A0BindingSource.DataMember = "FK__Computers__ListI__787EE5A0";
+            this.fKComputersListI787EE5A0BindingSource.DataSource = this.list1BindingSource6;
+            // 
+            // list1BindingSource6
+            // 
+            this.list1BindingSource6.DataMember = "list_1";
+            this.list1BindingSource6.DataSource = this.q5_2DataSet;
+            // 
+            // q5_2DataSet
+            // 
+            this.q5_2DataSet.DataSetName = "Q5_2DataSet";
+            this.q5_2DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.DataSource = this.list1BindingSource6;
+            this.comboBox5.DisplayMember = "value";
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(29, 49);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(716, 26);
+            this.comboBox5.TabIndex = 0;
+            this.comboBox5.ValueMember = "ID";
+            this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.comboBox5_SelectedIndexChanged);
+            // 
+            // fKDetail1ListID6E01572DBindingSource2
+            // 
+            this.fKDetail1ListID6E01572DBindingSource2.DataMember = "FK__Detail_1__ListID__6E01572D";
+            this.fKDetail1ListID6E01572DBindingSource2.DataSource = this.list1BindingSource5;
+            // 
+            // location1BindingSource2
+            // 
+            this.location1BindingSource2.DataMember = "Location1";
+            this.location1BindingSource2.DataSource = this.lLSDataSet2;
+            // 
+            // lLSDataSet2
+            // 
+            this.lLSDataSet2.DataSetName = "lLSDataSet";
+            this.lLSDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // listBindingSource3
+            // 
+            this.listBindingSource3.DataMember = "list";
+            this.listBindingSource3.DataSource = this.lLSDataSet3;
+            // 
+            // lLSDataSet3
+            // 
+            this.lLSDataSet3.DataSetName = "lLSDataSet";
+            this.lLSDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // detail11BindingSource1
             // 
@@ -779,30 +1034,6 @@
             // 
             this.detail_11TableAdapter.ClearBeforeFill = true;
             // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.comboBox3);
-            this.tabPage5.Controls.Add(this.dataGridView5);
-            this.tabPage5.Controls.Add(this.comboBox4);
-            this.tabPage5.Location = new System.Drawing.Point(4, 28);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(803, 434);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Q4";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.DataSource = this.list1BindingSource4;
-            this.comboBox4.DisplayMember = "value";
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(417, 4);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(380, 26);
-            this.comboBox4.TabIndex = 1;
-            this.comboBox4.ValueMember = "ListID";
-            // 
             // cLDetailDataSet
             // 
             this.cLDetailDataSet.DataSetName = "CLDetailDataSet";
@@ -836,86 +1067,140 @@
             this.list1BindingSource3.DataMember = "list_1";
             this.list1BindingSource3.DataSource = this.cLDetailDataSet;
             // 
-            // dataGridView5
-            // 
-            this.dataGridView5.AllowUserToAddRows = false;
-            this.dataGridView5.AllowUserToDeleteRows = false;
-            this.dataGridView5.AutoGenerateColumns = false;
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.segmentDataGridViewTextBoxColumn,
-            this.numCoresDataGridViewTextBoxColumn});
-            this.dataGridView5.DataSource = this.detail11BindingSource3;
-            this.dataGridView5.Location = new System.Drawing.Point(-4, 36);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.ReadOnly = true;
-            this.dataGridView5.RowHeadersWidth = 62;
-            this.dataGridView5.RowTemplate.Height = 31;
-            this.dataGridView5.Size = new System.Drawing.Size(801, 377);
-            this.dataGridView5.TabIndex = 2;
-            // 
-            // cLDetailDataSet1
-            // 
-            this.cLDetailDataSet1.DataSetName = "CLDetailDataSet";
-            this.cLDetailDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // cLDetailDataSet1BindingSource
             // 
             this.cLDetailDataSet1BindingSource.DataSource = this.cLDetailDataSet1;
             this.cLDetailDataSet1BindingSource.Position = 0;
             // 
-            // detail11BindingSource3
-            // 
-            this.detail11BindingSource3.DataMember = "Detail_11";
-            this.detail11BindingSource3.DataSource = this.cLDetailDataSet1;
-            // 
             // detail_11TableAdapter1
             // 
             this.detail_11TableAdapter1.ClearBeforeFill = true;
             // 
-            // segmentDataGridViewTextBoxColumn
+            // list_1TableAdapter2
             // 
-            this.segmentDataGridViewTextBoxColumn.DataPropertyName = "Segment";
-            this.segmentDataGridViewTextBoxColumn.HeaderText = "Segment";
-            this.segmentDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.segmentDataGridViewTextBoxColumn.Name = "segmentDataGridViewTextBoxColumn";
-            this.segmentDataGridViewTextBoxColumn.ReadOnly = true;
-            this.segmentDataGridViewTextBoxColumn.Width = 150;
+            this.list_1TableAdapter2.ClearBeforeFill = true;
             // 
-            // numCoresDataGridViewTextBoxColumn
+            // fKDetail1ListID6E01572DBindingSource1
             // 
-            this.numCoresDataGridViewTextBoxColumn.DataPropertyName = "numCores";
-            this.numCoresDataGridViewTextBoxColumn.HeaderText = "numCores";
-            this.numCoresDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.numCoresDataGridViewTextBoxColumn.Name = "numCoresDataGridViewTextBoxColumn";
-            this.numCoresDataGridViewTextBoxColumn.ReadOnly = true;
-            this.numCoresDataGridViewTextBoxColumn.Width = 150;
+            this.fKDetail1ListID6E01572DBindingSource1.DataMember = "FK__Detail_1__ListID__6E01572D";
+            this.fKDetail1ListID6E01572DBindingSource1.DataSource = this.list1BindingSource5;
             // 
-            // cLDetailDataSet2
+            // detail_1TableAdapter1
             // 
-            this.cLDetailDataSet2.DataSetName = "CLDetailDataSet";
-            this.cLDetailDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.detail_1TableAdapter1.ClearBeforeFill = true;
             // 
-            // list1BindingSource4
+            // q5_1DataSet
             // 
-            this.list1BindingSource4.DataMember = "list_1";
-            this.list1BindingSource4.DataSource = this.cLDetailDataSet2;
+            this.q5_1DataSet.DataSetName = "Q5_1DataSet";
+            this.q5_1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // comboBox3
+            // tOP500BindingSource
             // 
-            this.comboBox3.DataSource = this.countryListBindingSource2;
-            this.comboBox3.DisplayMember = "Country";
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(1, 4);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(410, 26);
-            this.comboBox3.TabIndex = 3;
-            this.comboBox3.ValueMember = "CountryID";
+            this.tOP500BindingSource.DataMember = "TOP500";
+            this.tOP500BindingSource.DataSource = this.q5_1DataSet;
             // 
-            // countryListBindingSource2
+            // tOP500TableAdapter
             // 
-            this.countryListBindingSource2.DataMember = "CountryList";
-            this.countryListBindingSource2.DataSource = this.cLDetailDataSet2;
+            this.tOP500TableAdapter.ClearBeforeFill = true;
+            // 
+            // tOP500BindingSource1
+            // 
+            this.tOP500BindingSource1.DataMember = "TOP500";
+            this.tOP500BindingSource1.DataSource = this.q5_1DataSet;
+            // 
+            // systemBindingSource
+            // 
+            this.systemBindingSource.DataMember = "System";
+            this.systemBindingSource.DataSource = this.q5_1DataSet;
+            // 
+            // systemTableAdapter
+            // 
+            this.systemTableAdapter.ClearBeforeFill = true;
+            // 
+            // fKTOP500SystemID48CFD27EBindingSource
+            // 
+            this.fKTOP500SystemID48CFD27EBindingSource.DataMember = "FK__TOP500__SystemID__48CFD27E";
+            this.fKTOP500SystemID48CFD27EBindingSource.DataSource = this.systemBindingSource;
+            // 
+            // list_1TableAdapter3
+            // 
+            this.list_1TableAdapter3.ClearBeforeFill = true;
+            // 
+            // computers_1TableAdapter
+            // 
+            this.computers_1TableAdapter.ClearBeforeFill = true;
+            // 
+            // fillByToolStrip
+            // 
+            this.fillByToolStrip.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.fillByToolStrip.Dock = System.Windows.Forms.DockStyle.None;
+            this.fillByToolStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.fillByToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.rankHToolStripLabel,
+            this.rankHToolStripTextBox,
+            this.rankLToolStripLabel,
+            this.rankLToolStripTextBox,
+            this.listIDToolStripLabel,
+            this.listIDToolStripTextBox,
+            this.fillByToolStripButton});
+            this.fillByToolStrip.Location = new System.Drawing.Point(145, 3);
+            this.fillByToolStrip.Name = "fillByToolStrip";
+            this.fillByToolStrip.Size = new System.Drawing.Size(600, 32);
+            this.fillByToolStrip.TabIndex = 2;
+            this.fillByToolStrip.Text = "fillByToolStrip";
+            this.fillByToolStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.fillByToolStrip_ItemClicked);
+            // 
+            // rankHToolStripLabel
+            // 
+            this.rankHToolStripLabel.Name = "rankHToolStripLabel";
+            this.rankHToolStripLabel.Size = new System.Drawing.Size(71, 20);
+            this.rankHToolStripLabel.Text = "RankH:";
+            // 
+            // rankHToolStripTextBox
+            // 
+            this.rankHToolStripTextBox.Name = "rankHToolStripTextBox";
+            this.rankHToolStripTextBox.Size = new System.Drawing.Size(100, 30);
+            // 
+            // rankLToolStripLabel
+            // 
+            this.rankLToolStripLabel.Name = "rankLToolStripLabel";
+            this.rankLToolStripLabel.Size = new System.Drawing.Size(66, 23);
+            this.rankLToolStripLabel.Text = "RankL:";
+            // 
+            // rankLToolStripTextBox
+            // 
+            this.rankLToolStripTextBox.Name = "rankLToolStripTextBox";
+            this.rankLToolStripTextBox.Size = new System.Drawing.Size(100, 30);
+            // 
+            // listIDToolStripLabel
+            // 
+            this.listIDToolStripLabel.Name = "listIDToolStripLabel";
+            this.listIDToolStripLabel.Size = new System.Drawing.Size(62, 23);
+            this.listIDToolStripLabel.Text = "ListID:";
+            // 
+            // listIDToolStripTextBox
+            // 
+            this.listIDToolStripTextBox.Name = "listIDToolStripTextBox";
+            this.listIDToolStripTextBox.Size = new System.Drawing.Size(100, 30);
+            // 
+            // fillByToolStripButton
+            // 
+            this.fillByToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.fillByToolStripButton.Name = "fillByToolStripButton";
+            this.fillByToolStripButton.Size = new System.Drawing.Size(71, 33);
+            this.fillByToolStripButton.Text = "Search";
+            this.fillByToolStripButton.Click += new System.EventHandler(this.fillByToolStripButton_Click_12);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(94, 18);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Search Here";
             // 
             // Form1
             // 
@@ -936,15 +1221,32 @@
             ((System.ComponentModel.ISupportInitialize)(this.detail2BindingSource)).EndInit();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.location1BindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lLSDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listBindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lLSDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKDetail1ListID6E01572DBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.list1BindingSource5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.q5DataSet)).EndInit();
             this.tabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKcountryContine693CA210BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.continentBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.concouDataSet)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.countryListBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cLDetailDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detail11BindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cLDetailDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.list1BindingSource4)).EndInit();
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKComputersListI787EE5A0BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.list1BindingSource6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.q5_2DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKDetail1ListID6E01572DBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.location1BindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lLSDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lLSDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.detail11BindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.d1L1DataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.list1BindingSource1)).EndInit();
@@ -988,19 +1290,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.fKDetail1Contine6383C8BABindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKDetail1ListID6E01572DBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.detail11BindingSource2)).EndInit();
-            this.tabPage5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.cLDetailDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.countryListBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.list1BindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.countryListBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.list1BindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cLDetailDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cLDetailDataSet1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.detail11BindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cLDetailDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.list1BindingSource4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.countryListBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKDetail1ListID6E01572DBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.q5_1DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tOP500BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tOP500BindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.systemBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKTOP500SystemID48CFD27EBindingSource)).EndInit();
+            this.fillByToolStrip.ResumeLayout(false);
+            this.fillByToolStrip.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1053,8 +1356,6 @@
         private System.Windows.Forms.BindingSource listDetailBindingSource;
         private lLSDataSet lLSDataSet3;
         private System.Windows.Forms.BindingSource listBindingSource3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn continentDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numComputerDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource location1BindingSource2;
         private DlDataSet dlDataSet;
         private System.Windows.Forms.BindingSource list1BindingSource;
@@ -1115,6 +1416,42 @@
         private System.Windows.Forms.BindingSource list1BindingSource4;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.BindingSource countryListBindingSource2;
+        private System.Windows.Forms.TabPage tabPage6;
+        private Q5DataSet q5DataSet;
+        private System.Windows.Forms.BindingSource list1BindingSource5;
+        private Q5DataSetTableAdapters.list_1TableAdapter list_1TableAdapter2;
+        private System.Windows.Forms.BindingSource fKDetail1ListID6E01572DBindingSource1;
+        private Q5DataSetTableAdapters.Detail_1TableAdapter detail_1TableAdapter1;
+        private System.Windows.Forms.BindingSource fKDetail1ListID6E01572DBindingSource2;
+        private System.Windows.Forms.BindingSource fKDetail1ListID6E01572DBindingSource3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn listDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn systemIDDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn continentDataGridViewTextBoxColumn;
+        private Q5_1DataSet q5_1DataSet;
+        private System.Windows.Forms.BindingSource tOP500BindingSource;
+        private Q5_1DataSetTableAdapters.TOP500TableAdapter tOP500TableAdapter;
+        private System.Windows.Forms.BindingSource tOP500BindingSource1;
+        private System.Windows.Forms.BindingSource systemBindingSource;
+        private Q5_1DataSetTableAdapters.SystemTableAdapter systemTableAdapter;
+        private System.Windows.Forms.BindingSource fKTOP500SystemID48CFD27EBindingSource;
+        private System.Windows.Forms.DataGridView dataGridView6;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private Q5_2DataSet q5_2DataSet;
+        private System.Windows.Forms.BindingSource list1BindingSource6;
+        private Q5_2DataSetTableAdapters.list_1TableAdapter list_1TableAdapter3;
+        private System.Windows.Forms.BindingSource fKComputersListI787EE5A0BindingSource;
+        private Q5_2DataSetTableAdapters.Computers_1TableAdapter computers_1TableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rankDataGridViewTextBoxColumn;
+        private System.Windows.Forms.ToolStrip fillByToolStrip;
+        private System.Windows.Forms.ToolStripLabel rankHToolStripLabel;
+        private System.Windows.Forms.ToolStripTextBox rankHToolStripTextBox;
+        private System.Windows.Forms.ToolStripLabel rankLToolStripLabel;
+        private System.Windows.Forms.ToolStripTextBox rankLToolStripTextBox;
+        private System.Windows.Forms.ToolStripLabel listIDToolStripLabel;
+        private System.Windows.Forms.ToolStripTextBox listIDToolStripTextBox;
+        private System.Windows.Forms.ToolStripButton fillByToolStripButton;
+        private System.Windows.Forms.Label label1;
     }
 }
 

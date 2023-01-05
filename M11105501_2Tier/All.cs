@@ -19,6 +19,18 @@ namespace M11105501_2Tier
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: 這行程式碼會將資料載入 'q5_2DataSet.Computers_1' 資料表。您可以視需要進行移動或移除。
+            this.computers_1TableAdapter.Fill(this.q5_2DataSet.Computers_1);
+            // TODO: 這行程式碼會將資料載入 'q5_2DataSet.list_1' 資料表。您可以視需要進行移動或移除。
+            this.list_1TableAdapter3.Fill(this.q5_2DataSet.list_1);
+            // TODO: 這行程式碼會將資料載入 'q5_1DataSet.System' 資料表。您可以視需要進行移動或移除。
+            this.systemTableAdapter.Fill(this.q5_1DataSet.System);
+            // TODO: 這行程式碼會將資料載入 'q5_1DataSet.TOP500' 資料表。您可以視需要進行移動或移除。
+            this.tOP500TableAdapter.Fill(this.q5_1DataSet.TOP500);
+            // TODO: 這行程式碼會將資料載入 'q5DataSet.Detail_1' 資料表。您可以視需要進行移動或移除。
+            this.detail_1TableAdapter1.Fill(this.q5DataSet.Detail_1);
+            // TODO: 這行程式碼會將資料載入 'q5DataSet.list_1' 資料表。您可以視需要進行移動或移除。
+            this.list_1TableAdapter2.Fill(this.q5DataSet.list_1);
             // TODO: 這行程式碼會將資料載入 'cLDetailDataSet2.CountryList' 資料表。您可以視需要進行移動或移除。
             this.countryListTableAdapter.Fill(this.cLDetailDataSet2.CountryList);
             // TODO: 這行程式碼會將資料載入 'cLDetailDataSet2.list_1' 資料表。您可以視需要進行移動或移除。
@@ -369,6 +381,55 @@ namespace M11105501_2Tier
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
             //detail11TableAdapter.Fill(this.d1L1DataSet.Detail_11, comboBox3.SelectedIndex);
+        }
+
+        private void fillByToolStripButton_Click_10(object sender, EventArgs e)
+        {
+            try
+            {
+                this.detail_1TableAdapter1.FillBy(this.q5DataSet.Detail_1);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void fillByToolStripButton_Click_11(object sender, EventArgs e)
+        {
+            try
+            {
+                //this.computers_1TableAdapter.FillBy(this.q5_2DataSet.Computers_1, new System.Nullable<double>(((double)(System.Convert.ChangeType(rHToolStripTextBox.Text, typeof(double))))), new System.Nullable<double>(((double)(System.Convert.ChangeType(rLToolStripTextBox.Text, typeof(double))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(iDToolStripTextBox.Text, typeof(int))))));
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void fillByToolStripButton_Click_12(object sender, EventArgs e)
+        {
+            try
+            {
+                this.computers_1TableAdapter.FillBy(this.q5_2DataSet.Computers_1, new System.Nullable<double>(((double)(System.Convert.ChangeType(rankHToolStripTextBox.Text, typeof(double))))), new System.Nullable<double>(((double)(System.Convert.ChangeType(rankLToolStripTextBox.Text, typeof(double))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(listIDToolStripTextBox.Text, typeof(int))))));
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void fillByToolStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

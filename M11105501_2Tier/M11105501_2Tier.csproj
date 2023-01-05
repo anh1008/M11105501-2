@@ -97,6 +97,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Q5DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Q5DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Q5_1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Q5_1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Q5_2DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Q5_2DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="testDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -211,6 +226,39 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Q5DataSet.xsc">
+      <DependentUpon>Q5DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Q5DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Q5DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Q5DataSet.xss">
+      <DependentUpon>Q5DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Q5_1DataSet.xsc">
+      <DependentUpon>Q5_1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Q5_1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Q5_1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Q5_1DataSet.xss">
+      <DependentUpon>Q5_1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Q5_2DataSet.xsc">
+      <DependentUpon>Q5_2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Q5_2DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Q5_2DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Q5_2DataSet.xss">
+      <DependentUpon>Q5_2DataSet.xsd</DependentUpon>
+    </None>
     <None Include="testDataSet.xsc">
       <DependentUpon>testDataSet.xsd</DependentUpon>
     </None>
