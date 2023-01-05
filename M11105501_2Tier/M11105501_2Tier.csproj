@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CLDetailDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CLDetailDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ConcouDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -55,6 +60,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ConLoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="D1L1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>D1L1DataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="DetailDataSet.cs">
       <DependentUpon>DetailDataSet.xsd</DependentUpon>
@@ -104,6 +114,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="CLDetailDataSet.xsc">
+      <DependentUpon>CLDetailDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CLDetailDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CLDetailDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CLDetailDataSet.xss">
+      <DependentUpon>CLDetailDataSet.xsd</DependentUpon>
+    </None>
     <None Include="ConcouDataSet.xsc">
       <DependentUpon>ConcouDataSet.xsd</DependentUpon>
     </None>
@@ -125,6 +146,17 @@
     </None>
     <None Include="ConLoDataSet.xss">
       <DependentUpon>ConLoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="D1L1DataSet.xsc">
+      <DependentUpon>D1L1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="D1L1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>D1L1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="D1L1DataSet.xss">
+      <DependentUpon>D1L1DataSet.xsd</DependentUpon>
     </None>
     <None Include="DetailDataSet.xsc">
       <DependentUpon>DetailDataSet.xsd</DependentUpon>

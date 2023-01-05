@@ -19,6 +19,20 @@ namespace M11105501_2Tier
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: 這行程式碼會將資料載入 'cLDetailDataSet2.CountryList' 資料表。您可以視需要進行移動或移除。
+            this.countryListTableAdapter.Fill(this.cLDetailDataSet2.CountryList);
+            // TODO: 這行程式碼會將資料載入 'cLDetailDataSet2.list_1' 資料表。您可以視需要進行移動或移除。
+            this.list_1TableAdapter1.Fill(this.cLDetailDataSet2.list_1);
+            // TODO: 這行程式碼會將資料載入 'cLDetailDataSet1.Detail_11' 資料表。您可以視需要進行移動或移除。
+            this.detail_11TableAdapter1.Fill(this.cLDetailDataSet1.Detail_11);
+            // TODO: 這行程式碼會將資料載入 'cLDetailDataSet.list_1' 資料表。您可以視需要進行移動或移除。
+            this.list_1TableAdapter1.Fill(this.cLDetailDataSet.list_1);
+            // TODO: 這行程式碼會將資料載入 'cLDetailDataSet.CountryList' 資料表。您可以視需要進行移動或移除。
+            this.countryListTableAdapter.Fill(this.cLDetailDataSet.CountryList);
+            // TODO: 這行程式碼會將資料載入 'd1L1DataSet.Detail_1' 資料表。您可以視需要進行移動或移除。
+            this.detail_1TableAdapter.Fill(this.d1L1DataSet.Detail_1);
+            // TODO: 這行程式碼會將資料載入 'd1L1DataSet.list_1' 資料表。您可以視需要進行移動或移除。
+            this.list_1TableAdapter.Fill(this.d1L1DataSet.list_1);
             // TODO: 這行程式碼會將資料載入 'concouDataSet.country' 資料表。您可以視需要進行移動或移除。
             this.countryTableAdapter.Fill(this.concouDataSet.country);
             // TODO: 這行程式碼會將資料載入 'concouDataSet.Continent' 資料表。您可以視需要進行移動或移除。
@@ -352,6 +366,9 @@ namespace M11105501_2Tier
 
         }
 
-        
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //detail11TableAdapter.Fill(this.d1L1DataSet.Detail_11, comboBox3.SelectedIndex);
+        }
     }
 }
