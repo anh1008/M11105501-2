@@ -172,6 +172,8 @@
             this.listIDToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
             this.fillByToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -273,6 +275,8 @@
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
+            this.tabControl1.Controls.Add(this.tabPage7);
+            this.tabControl1.Controls.Add(this.tabPage8);
             this.tabControl1.Location = new System.Drawing.Point(3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -1202,6 +1206,26 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Search Here";
             // 
+            // tabPage7
+            // 
+            this.tabPage7.Location = new System.Drawing.Point(4, 28);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(803, 434);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "tabPage7";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.Location = new System.Drawing.Point(4, 28);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(803, 434);
+            this.tabPage8.TabIndex = 7;
+            this.tabPage8.Text = "tabPage8";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -1452,6 +1476,8 @@
         private System.Windows.Forms.ToolStripTextBox listIDToolStripTextBox;
         private System.Windows.Forms.ToolStripButton fillByToolStripButton;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.TabPage tabPage8;
     }
 }
 
