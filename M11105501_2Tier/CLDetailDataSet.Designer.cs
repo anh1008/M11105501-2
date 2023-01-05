@@ -1628,7 +1628,7 @@ namespace M11105501_2Tier {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Detail_11Row AddDetail_11Row(string Segment, int numCores) {
+            public Detail_11Row AddDetail_11Row(string Segment, double numCores) {
                 Detail_11Row rowDetail_11Row = ((Detail_11Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Segment,
@@ -1664,7 +1664,7 @@ namespace M11105501_2Tier {
             private void InitClass() {
                 this.columnSegment = new global::System.Data.DataColumn("Segment", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSegment);
-                this.columnnumCores = new global::System.Data.DataColumn("numCores", typeof(int), null, global::System.Data.MappingType.Element);
+                this.columnnumCores = new global::System.Data.DataColumn("numCores", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnnumCores);
                 this.columnSegment.MaxLength = 2147483647;
                 this.columnnumCores.ReadOnly = true;
@@ -2592,10 +2592,10 @@ namespace M11105501_2Tier {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int numCores {
+            public double numCores {
                 get {
                     try {
-                        return ((int)(this[this.tableDetail_11.numCoresColumn]));
+                        return ((double)(this[this.tableDetail_11.numCoresColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("資料表 \'Detail_11\' 中資料行 \'numCores\' 的值是 DBNull。", e);
@@ -4518,8 +4518,8 @@ SELECT DetailID, ListID, List, Year, Month, Rank, SystemID, Manufacturer, Comput
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "select  Segment,count(TotalCores) as numCores from Detail_1,list_1\r\nwhere ListID=" +
-                "ID\r\ngroup by Segment\r\norder by Segment";
+            this._commandCollection[0].CommandText = "select  Segment,sum(TotalCores) as numCores from Detail_1,list_1\r\nwhere ListID=ID" +
+                "\r\ngroup by Segment\r\norder by Segment";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         

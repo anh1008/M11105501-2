@@ -267,7 +267,7 @@ SELECT ID, value FROM list_1 WHERE (ID = @ID)</CommandText>
               <DbSource ConnectionRef="M11105501ConnectionString (Settings)" DbObjectName="M11105501.dbo.Detail_1" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>select  Segment,count(TotalCores) as numCores from Detail_1,list_1
+                    <CommandText>select  Segment,sum(TotalCores) as numCores from Detail_1,list_1
 where ListID=ID
 group by Segment
 order by Segment</CommandText>
@@ -290,10 +290,49 @@ order by Segment</CommandText>
   <xs:element name="CLDetailDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="CLDetailDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="CLDetailDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="CountryList" msprop:Generator_RowClassName="CountryListRow" msprop:Generator_RowEvHandlerName="CountryListRowChangeEventHandler" msprop:Generator_RowDeletedName="CountryListRowDeleted" msprop:Generator_RowDeletingName="CountryListRowDeleting" msprop:Generator_RowEvArgName="CountryListRowChangeEvent" msprop:Generator_TablePropName="CountryList" msprop:Generator_RowChangedName="CountryListRowChanged" msprop:Generator_UserTableName="CountryList" msprop:Generator_RowChangingName="CountryListRowChanging" msprop:Generator_TableClassName="CountryListDataTable" msprop:Generator_TableVarName="tableCountryList">
+        <xs:element name="CountryList" msprop:Generator_RowEvHandlerName="CountryListRowChangeEventHandler" msprop:Generator_RowDeletedName="CountryListRowDeleted" msprop:Generator_RowDeletingName="CountryListRowDeleting" msprop:Generator_RowEvArgName="CountryListRowChangeEvent" msprop:Generator_TablePropName="CountryList" msprop:Generator_RowChangedName="CountryListRowChanged" msprop:Generator_UserTableName="CountryList" msprop:Generator_RowChangingName="CountryListRowChanging" msprop:Generator_RowClassName="CountryListRow" msprop:Generator_TableClassName="CountryListDataTable" msprop:Generator_TableVarName="tableCountryList">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" type="xs:int" />
+              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" type="xs:int" />
+              <xs:element name="Country" msprop:Generator_ColumnPropNameInTable="CountryColumn" msprop:Generator_ColumnPropNameInRow="Country" msprop:Generator_UserColumnName="Country" msprop:Generator_ColumnVarNameInTable="columnCountry" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="List" msprop:Generator_ColumnPropNameInTable="ListColumn" msprop:Generator_ColumnPropNameInRow="List" msprop:Generator_UserColumnName="List" msprop:Generator_ColumnVarNameInTable="columnList" type="xs:int" minOccurs="0" />
+              <xs:element name="CountryID" msprop:Generator_ColumnPropNameInTable="CountryIDColumn" msprop:Generator_ColumnPropNameInRow="CountryID" msprop:Generator_UserColumnName="CountryID" msprop:Generator_ColumnVarNameInTable="columnCountryID" type="xs:int" minOccurs="0" />
+              <xs:element name="ListID" msprop:Generator_ColumnPropNameInTable="ListIDColumn" msprop:Generator_ColumnPropNameInRow="ListID" msprop:Generator_UserColumnName="ListID" msprop:Generator_ColumnVarNameInTable="columnListID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Detail_1" msprop:Generator_RowClassName="Detail_1Row" msprop:Generator_RowEvHandlerName="Detail_1RowChangeEventHandler" msprop:Generator_RowDeletedName="Detail_1RowDeleted" msprop:Generator_RowDeletingName="Detail_1RowDeleting" msprop:Generator_RowEvArgName="Detail_1RowChangeEvent" msprop:Generator_TablePropName="Detail_1" msprop:Generator_RowChangedName="Detail_1RowChanged" msprop:Generator_UserTableName="Detail_1" msprop:Generator_RowChangingName="Detail_1RowChanging" msprop:Generator_TableClassName="Detail_1DataTable" msprop:Generator_TableVarName="tableDetail_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DetailID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="DetailID" msprop:Generator_ColumnPropNameInTable="DetailIDColumn" msprop:Generator_ColumnPropNameInRow="DetailID" msprop:Generator_ColumnVarNameInTable="columnDetailID" type="xs:int" />
+              <xs:element name="ListID" msprop:Generator_UserColumnName="ListID" msprop:Generator_ColumnPropNameInTable="ListIDColumn" msprop:Generator_ColumnPropNameInRow="ListID" msprop:Generator_ColumnVarNameInTable="columnListID" type="xs:int" minOccurs="0" />
+              <xs:element name="List" msprop:Generator_UserColumnName="List" msprop:Generator_ColumnPropNameInTable="ListColumn" msprop:Generator_ColumnPropNameInRow="List" msprop:Generator_ColumnVarNameInTable="columnList" type="xs:double" minOccurs="0" />
+              <xs:element name="Year" msprop:Generator_UserColumnName="Year" msprop:Generator_ColumnPropNameInTable="YearColumn" msprop:Generator_ColumnPropNameInRow="Year" msprop:Generator_ColumnVarNameInTable="columnYear" type="xs:int" minOccurs="0" />
+              <xs:element name="Month" msprop:Generator_UserColumnName="Month" msprop:Generator_ColumnPropNameInTable="MonthColumn" msprop:Generator_ColumnPropNameInRow="Month" msprop:Generator_ColumnVarNameInTable="columnMonth" type="xs:double" minOccurs="0" />
+              <xs:element name="Rank" msprop:Generator_UserColumnName="Rank" msprop:Generator_ColumnPropNameInTable="RankColumn" msprop:Generator_ColumnPropNameInRow="Rank" msprop:Generator_ColumnVarNameInTable="columnRank" type="xs:double" minOccurs="0" />
+              <xs:element name="SystemID" msprop:Generator_UserColumnName="SystemID" msprop:Generator_ColumnPropNameInTable="SystemIDColumn" msprop:Generator_ColumnPropNameInRow="SystemID" msprop:Generator_ColumnVarNameInTable="columnSystemID" type="xs:int" minOccurs="0" />
+              <xs:element name="Manufacturer" msprop:Generator_UserColumnName="Manufacturer" msprop:Generator_ColumnPropNameInTable="ManufacturerColumn" msprop:Generator_ColumnPropNameInRow="Manufacturer" msprop:Generator_ColumnVarNameInTable="columnManufacturer" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Computer" msprop:Generator_UserColumnName="Computer" msprop:Generator_ColumnPropNameInTable="ComputerColumn" msprop:Generator_ColumnPropNameInRow="Computer" msprop:Generator_ColumnVarNameInTable="columnComputer" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Rmax" msprop:Generator_UserColumnName="Rmax" msprop:Generator_ColumnPropNameInTable="RmaxColumn" msprop:Generator_ColumnPropNameInRow="Rmax" msprop:Generator_ColumnVarNameInTable="columnRmax" type="xs:double" minOccurs="0" />
+              <xs:element name="Rpeak" msprop:Generator_UserColumnName="Rpeak" msprop:Generator_ColumnPropNameInTable="RpeakColumn" msprop:Generator_ColumnPropNameInRow="Rpeak" msprop:Generator_ColumnVarNameInTable="columnRpeak" type="xs:double" minOccurs="0" />
               <xs:element name="Country" msprop:Generator_UserColumnName="Country" msprop:Generator_ColumnPropNameInTable="CountryColumn" msprop:Generator_ColumnPropNameInRow="Country" msprop:Generator_ColumnVarNameInTable="columnCountry" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -301,70 +340,31 @@ order by Segment</CommandText>
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="List" msprop:Generator_UserColumnName="List" msprop:Generator_ColumnPropNameInTable="ListColumn" msprop:Generator_ColumnPropNameInRow="List" msprop:Generator_ColumnVarNameInTable="columnList" type="xs:int" minOccurs="0" />
-              <xs:element name="CountryID" msprop:Generator_UserColumnName="CountryID" msprop:Generator_ColumnPropNameInTable="CountryIDColumn" msprop:Generator_ColumnPropNameInRow="CountryID" msprop:Generator_ColumnVarNameInTable="columnCountryID" type="xs:int" minOccurs="0" />
-              <xs:element name="ListID" msprop:Generator_UserColumnName="ListID" msprop:Generator_ColumnPropNameInTable="ListIDColumn" msprop:Generator_ColumnPropNameInRow="ListID" msprop:Generator_ColumnVarNameInTable="columnListID" type="xs:int" minOccurs="0" />
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="Detail_1" msprop:Generator_RowEvHandlerName="Detail_1RowChangeEventHandler" msprop:Generator_RowDeletedName="Detail_1RowDeleted" msprop:Generator_RowDeletingName="Detail_1RowDeleting" msprop:Generator_RowEvArgName="Detail_1RowChangeEvent" msprop:Generator_TablePropName="Detail_1" msprop:Generator_RowChangedName="Detail_1RowChanged" msprop:Generator_RowChangingName="Detail_1RowChanging" msprop:Generator_TableClassName="Detail_1DataTable" msprop:Generator_RowClassName="Detail_1Row" msprop:Generator_TableVarName="tableDetail_1" msprop:Generator_UserTableName="Detail_1">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="DetailID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="DetailID" msprop:Generator_ColumnPropNameInTable="DetailIDColumn" msprop:Generator_ColumnVarNameInTable="columnDetailID" msprop:Generator_UserColumnName="DetailID" type="xs:int" />
-              <xs:element name="ListID" msprop:Generator_ColumnPropNameInRow="ListID" msprop:Generator_ColumnPropNameInTable="ListIDColumn" msprop:Generator_ColumnVarNameInTable="columnListID" msprop:Generator_UserColumnName="ListID" type="xs:int" minOccurs="0" />
-              <xs:element name="List" msprop:Generator_ColumnPropNameInRow="List" msprop:Generator_ColumnPropNameInTable="ListColumn" msprop:Generator_ColumnVarNameInTable="columnList" msprop:Generator_UserColumnName="List" type="xs:double" minOccurs="0" />
-              <xs:element name="Year" msprop:Generator_ColumnPropNameInRow="Year" msprop:Generator_ColumnPropNameInTable="YearColumn" msprop:Generator_ColumnVarNameInTable="columnYear" msprop:Generator_UserColumnName="Year" type="xs:int" minOccurs="0" />
-              <xs:element name="Month" msprop:Generator_ColumnPropNameInRow="Month" msprop:Generator_ColumnPropNameInTable="MonthColumn" msprop:Generator_ColumnVarNameInTable="columnMonth" msprop:Generator_UserColumnName="Month" type="xs:double" minOccurs="0" />
-              <xs:element name="Rank" msprop:Generator_ColumnPropNameInRow="Rank" msprop:Generator_ColumnPropNameInTable="RankColumn" msprop:Generator_ColumnVarNameInTable="columnRank" msprop:Generator_UserColumnName="Rank" type="xs:double" minOccurs="0" />
-              <xs:element name="SystemID" msprop:Generator_ColumnPropNameInRow="SystemID" msprop:Generator_ColumnPropNameInTable="SystemIDColumn" msprop:Generator_ColumnVarNameInTable="columnSystemID" msprop:Generator_UserColumnName="SystemID" type="xs:int" minOccurs="0" />
-              <xs:element name="Manufacturer" msprop:Generator_ColumnPropNameInRow="Manufacturer" msprop:Generator_ColumnPropNameInTable="ManufacturerColumn" msprop:Generator_ColumnVarNameInTable="columnManufacturer" msprop:Generator_UserColumnName="Manufacturer" minOccurs="0">
+              <xs:element name="YearAppear" msprop:Generator_UserColumnName="YearAppear" msprop:Generator_ColumnPropNameInTable="YearAppearColumn" msprop:Generator_ColumnPropNameInRow="YearAppear" msprop:Generator_ColumnVarNameInTable="columnYearAppear" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalCores" msprop:Generator_UserColumnName="TotalCores" msprop:Generator_ColumnPropNameInTable="TotalCoresColumn" msprop:Generator_ColumnPropNameInRow="TotalCores" msprop:Generator_ColumnVarNameInTable="columnTotalCores" type="xs:double" minOccurs="0" />
+              <xs:element name="Segment" msprop:Generator_UserColumnName="Segment" msprop:Generator_ColumnPropNameInTable="SegmentColumn" msprop:Generator_ColumnPropNameInRow="Segment" msprop:Generator_ColumnVarNameInTable="columnSegment" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Computer" msprop:Generator_ColumnPropNameInRow="Computer" msprop:Generator_ColumnPropNameInTable="ComputerColumn" msprop:Generator_ColumnVarNameInTable="columnComputer" msprop:Generator_UserColumnName="Computer" minOccurs="0">
+              <xs:element name="SiteID" msprop:Generator_UserColumnName="SiteID" msprop:Generator_ColumnPropNameInTable="SiteIDColumn" msprop:Generator_ColumnPropNameInRow="SiteID" msprop:Generator_ColumnVarNameInTable="columnSiteID" type="xs:int" minOccurs="0" />
+              <xs:element name="Site" msprop:Generator_UserColumnName="Site" msprop:Generator_ColumnPropNameInTable="SiteColumn" msprop:Generator_ColumnPropNameInRow="Site" msprop:Generator_ColumnVarNameInTable="columnSite" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Rmax" msprop:Generator_ColumnPropNameInRow="Rmax" msprop:Generator_ColumnPropNameInTable="RmaxColumn" msprop:Generator_ColumnVarNameInTable="columnRmax" msprop:Generator_UserColumnName="Rmax" type="xs:double" minOccurs="0" />
-              <xs:element name="Rpeak" msprop:Generator_ColumnPropNameInRow="Rpeak" msprop:Generator_ColumnPropNameInTable="RpeakColumn" msprop:Generator_ColumnVarNameInTable="columnRpeak" msprop:Generator_UserColumnName="Rpeak" type="xs:double" minOccurs="0" />
-              <xs:element name="Country" msprop:Generator_ColumnPropNameInRow="Country" msprop:Generator_ColumnPropNameInTable="CountryColumn" msprop:Generator_ColumnVarNameInTable="columnCountry" msprop:Generator_UserColumnName="Country" minOccurs="0">
+              <xs:element name="Region" msprop:Generator_UserColumnName="Region" msprop:Generator_ColumnPropNameInTable="RegionColumn" msprop:Generator_ColumnPropNameInRow="Region" msprop:Generator_ColumnVarNameInTable="columnRegion" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="YearAppear" msprop:Generator_ColumnPropNameInRow="YearAppear" msprop:Generator_ColumnPropNameInTable="YearAppearColumn" msprop:Generator_ColumnVarNameInTable="columnYearAppear" msprop:Generator_UserColumnName="YearAppear" type="xs:int" minOccurs="0" />
-              <xs:element name="TotalCores" msprop:Generator_ColumnPropNameInRow="TotalCores" msprop:Generator_ColumnPropNameInTable="TotalCoresColumn" msprop:Generator_ColumnVarNameInTable="columnTotalCores" msprop:Generator_UserColumnName="TotalCores" type="xs:double" minOccurs="0" />
-              <xs:element name="Segment" msprop:Generator_ColumnPropNameInRow="Segment" msprop:Generator_ColumnPropNameInTable="SegmentColumn" msprop:Generator_ColumnVarNameInTable="columnSegment" msprop:Generator_UserColumnName="Segment" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="2147483647" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="SiteID" msprop:Generator_ColumnPropNameInRow="SiteID" msprop:Generator_ColumnPropNameInTable="SiteIDColumn" msprop:Generator_ColumnVarNameInTable="columnSiteID" msprop:Generator_UserColumnName="SiteID" type="xs:int" minOccurs="0" />
-              <xs:element name="Site" msprop:Generator_ColumnPropNameInRow="Site" msprop:Generator_ColumnPropNameInTable="SiteColumn" msprop:Generator_ColumnVarNameInTable="columnSite" msprop:Generator_UserColumnName="Site" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="2147483647" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Region" msprop:Generator_ColumnPropNameInRow="Region" msprop:Generator_ColumnPropNameInTable="RegionColumn" msprop:Generator_ColumnVarNameInTable="columnRegion" msprop:Generator_UserColumnName="Region" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="2147483647" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Continent" msprop:Generator_ColumnPropNameInRow="Continent" msprop:Generator_ColumnPropNameInTable="ContinentColumn" msprop:Generator_ColumnVarNameInTable="columnContinent" msprop:Generator_UserColumnName="Continent" minOccurs="0">
+              <xs:element name="Continent" msprop:Generator_UserColumnName="Continent" msprop:Generator_ColumnPropNameInTable="ContinentColumn" msprop:Generator_ColumnPropNameInRow="Continent" msprop:Generator_ColumnVarNameInTable="columnContinent" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
@@ -374,25 +374,25 @@ order by Segment</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="list_1" msprop:Generator_RowEvHandlerName="list_1RowChangeEventHandler" msprop:Generator_RowDeletedName="list_1RowDeleted" msprop:Generator_RowDeletingName="list_1RowDeleting" msprop:Generator_RowEvArgName="list_1RowChangeEvent" msprop:Generator_TablePropName="list_1" msprop:Generator_RowChangedName="list_1RowChanged" msprop:Generator_RowChangingName="list_1RowChanging" msprop:Generator_TableClassName="list_1DataTable" msprop:Generator_RowClassName="list_1Row" msprop:Generator_TableVarName="tablelist_1" msprop:Generator_UserTableName="list_1">
+        <xs:element name="list_1" msprop:Generator_RowClassName="list_1Row" msprop:Generator_RowEvHandlerName="list_1RowChangeEventHandler" msprop:Generator_RowDeletedName="list_1RowDeleted" msprop:Generator_RowDeletingName="list_1RowDeleting" msprop:Generator_RowEvArgName="list_1RowChangeEvent" msprop:Generator_TablePropName="list_1" msprop:Generator_RowChangedName="list_1RowChanged" msprop:Generator_UserTableName="list_1" msprop:Generator_RowChangingName="list_1RowChanging" msprop:Generator_TableClassName="list_1DataTable" msprop:Generator_TableVarName="tablelist_1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_UserColumnName="ID" type="xs:int" />
-              <xs:element name="value" msprop:Generator_ColumnPropNameInRow="value" msprop:Generator_ColumnPropNameInTable="valueColumn" msprop:Generator_ColumnVarNameInTable="columnvalue" msprop:Generator_UserColumnName="value" type="xs:int" minOccurs="0" />
+              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" type="xs:int" />
+              <xs:element name="value" msprop:Generator_UserColumnName="value" msprop:Generator_ColumnPropNameInTable="valueColumn" msprop:Generator_ColumnPropNameInRow="value" msprop:Generator_ColumnVarNameInTable="columnvalue" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Detail_11" msprop:Generator_RowEvHandlerName="Detail_11RowChangeEventHandler" msprop:Generator_RowDeletedName="Detail_11RowDeleted" msprop:Generator_RowDeletingName="Detail_11RowDeleting" msprop:Generator_RowEvArgName="Detail_11RowChangeEvent" msprop:Generator_TablePropName="Detail_11" msprop:Generator_RowChangedName="Detail_11RowChanged" msprop:Generator_RowChangingName="Detail_11RowChanging" msprop:Generator_TableClassName="Detail_11DataTable" msprop:Generator_RowClassName="Detail_11Row" msprop:Generator_TableVarName="tableDetail_11" msprop:Generator_UserTableName="Detail_11">
+        <xs:element name="Detail_11" msprop:Generator_RowClassName="Detail_11Row" msprop:Generator_RowEvHandlerName="Detail_11RowChangeEventHandler" msprop:Generator_RowDeletedName="Detail_11RowDeleted" msprop:Generator_RowDeletingName="Detail_11RowDeleting" msprop:Generator_RowEvArgName="Detail_11RowChangeEvent" msprop:Generator_TablePropName="Detail_11" msprop:Generator_RowChangedName="Detail_11RowChanged" msprop:Generator_UserTableName="Detail_11" msprop:Generator_RowChangingName="Detail_11RowChanging" msprop:Generator_TableClassName="Detail_11DataTable" msprop:Generator_TableVarName="tableDetail_11">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Segment" msprop:Generator_ColumnPropNameInRow="Segment" msprop:Generator_ColumnPropNameInTable="SegmentColumn" msprop:Generator_ColumnVarNameInTable="columnSegment" msprop:Generator_UserColumnName="Segment" minOccurs="0">
+              <xs:element name="Segment" msprop:Generator_UserColumnName="Segment" msprop:Generator_ColumnPropNameInTable="SegmentColumn" msprop:Generator_ColumnPropNameInRow="Segment" msprop:Generator_ColumnVarNameInTable="columnSegment" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="numCores" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="numCores" msprop:Generator_ColumnPropNameInTable="numCoresColumn" msprop:Generator_ColumnVarNameInTable="columnnumCores" msprop:Generator_UserColumnName="numCores" type="xs:int" minOccurs="0" />
+              <xs:element name="numCores" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="numCores" msprop:Generator_ColumnPropNameInTable="numCoresColumn" msprop:Generator_ColumnVarNameInTable="columnnumCores" msprop:Generator_UserColumnName="numCores" type="xs:double" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -413,8 +413,8 @@ order by Segment</CommandText>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK__CountryLi__ListI__71D1E811" msdata:parent="list_1" msdata:child="CountryList" msdata:parentkey="ID" msdata:childkey="ListID" msprop:Generator_UserParentTable="list_1" msprop:Generator_UserChildTable="CountryList" msprop:Generator_RelationVarName="relationFK__CountryLi__ListI__71D1E811" msprop:Generator_UserRelationName="FK__CountryLi__ListI__71D1E811" msprop:Generator_ChildPropName="GetCountryListRows" msprop:Generator_ParentPropName="list_1Row" />
-      <msdata:Relationship name="FK__Detail_1__ListID__6E01572D" msdata:parent="list_1" msdata:child="Detail_1" msdata:parentkey="ID" msdata:childkey="ListID" msprop:Generator_UserParentTable="list_1" msprop:Generator_UserChildTable="Detail_1" msprop:Generator_RelationVarName="relationFK__Detail_1__ListID__6E01572D" msprop:Generator_UserRelationName="FK__Detail_1__ListID__6E01572D" msprop:Generator_ChildPropName="GetDetail_1Rows" msprop:Generator_ParentPropName="list_1Row" />
+      <msdata:Relationship name="FK__CountryLi__ListI__71D1E811" msdata:parent="list_1" msdata:child="CountryList" msdata:parentkey="ID" msdata:childkey="ListID" msprop:Generator_UserParentTable="list_1" msprop:Generator_UserChildTable="CountryList" msprop:Generator_RelationVarName="relationFK__CountryLi__ListI__71D1E811" msprop:Generator_ChildPropName="GetCountryListRows" msprop:Generator_ParentPropName="list_1Row" msprop:Generator_UserRelationName="FK__CountryLi__ListI__71D1E811" />
+      <msdata:Relationship name="FK__Detail_1__ListID__6E01572D" msdata:parent="list_1" msdata:child="Detail_1" msdata:parentkey="ID" msdata:childkey="ListID" msprop:Generator_UserParentTable="list_1" msprop:Generator_UserChildTable="Detail_1" msprop:Generator_RelationVarName="relationFK__Detail_1__ListID__6E01572D" msprop:Generator_ChildPropName="GetDetail_1Rows" msprop:Generator_ParentPropName="list_1Row" msprop:Generator_UserRelationName="FK__Detail_1__ListID__6E01572D" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>
