@@ -32,11 +32,30 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.regionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.aVGRpeakDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.detail1BindingSource6 = new System.Windows.Forms.BindingSource(this.components);
             this.detailDataSet1 = new M11105501_2Tier.DetailDataSet();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.listDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aCGRpeakDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.detail2BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.continentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numComputerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.location1BindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.lLSDataSet2 = new M11105501_2Tier.lLSDataSet();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.listBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.lLSDataSet3 = new M11105501_2Tier.lLSDataSet();
+            this.detailBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.location1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.lLSDataSet1 = new M11105501_2Tier.lLSDataSet();
+            this.listBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.listBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lLSDataSet = new M11105501_2Tier.lLSDataSet();
             this.detail1BindingSource8 = new System.Windows.Forms.BindingSource(this.components);
             this.detail1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.detailBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -52,17 +71,42 @@
             this.detail1BindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.detail1BindingSource5 = new System.Windows.Forms.BindingSource(this.components);
             this.detail1BindingSource7 = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.detail2BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.detail2TableAdapter = new M11105501_2Tier.DetailDataSetTableAdapters.Detail2TableAdapter();
-            this.listDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aCGRpeakDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.listTableAdapter = new M11105501_2Tier.lLSDataSetTableAdapters.listTableAdapter();
+            this.location1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.location1TableAdapter = new M11105501_2Tier.lLSDataSetTableAdapters.Location1TableAdapter();
+            this.detailBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.detailTableAdapter1 = new M11105501_2Tier.lLSDataSetTableAdapters.DetailTableAdapter();
+            this.listBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.listDetailBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dlDataSet = new M11105501_2Tier.DlDataSet();
+            this.list1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.list1TableAdapter = new M11105501_2Tier.DlDataSetTableAdapters.list1TableAdapter();
+            this.detail1BindingSource9 = new System.Windows.Forms.BindingSource(this.components);
+            this.detail1TableAdapter1 = new M11105501_2Tier.DlDataSetTableAdapters.Detail1TableAdapter();
+            this.detailBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.detail11BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.detail11TableAdapter = new M11105501_2Tier.DlDataSetTableAdapters.Detail11TableAdapter();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.detail1BindingSource6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detailDataSet1)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detail2BindingSource)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.location1BindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lLSDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lLSDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detailBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.location1BindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lLSDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lLSDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detail1BindingSource8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detail1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detailBindingSource)).BeginInit();
@@ -76,14 +120,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.detail1BindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detail1BindingSource5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detail1BindingSource7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.detail2BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.location1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detailBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listDetailBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dlDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.list1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detail1BindingSource9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detailBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detail11BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -121,17 +173,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(797, 428);
             this.dataGridView1.TabIndex = 0;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.dataGridView2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 28);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(803, 434);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Q1-2";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
             // regionDataGridViewTextBoxColumn
             // 
             this.regionDataGridViewTextBoxColumn.DataPropertyName = "Region";
@@ -159,6 +200,170 @@
             // 
             this.detailDataSet1.DataSetName = "DetailDataSet";
             this.detailDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.dataGridView2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 28);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(803, 434);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Q1-2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.listDataGridViewTextBoxColumn,
+            this.aCGRpeakDataGridViewTextBoxColumn});
+            this.dataGridView2.DataSource = this.detail2BindingSource;
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView2.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.RowHeadersWidth = 62;
+            this.dataGridView2.RowTemplate.Height = 31;
+            this.dataGridView2.Size = new System.Drawing.Size(797, 428);
+            this.dataGridView2.TabIndex = 0;
+            // 
+            // listDataGridViewTextBoxColumn
+            // 
+            this.listDataGridViewTextBoxColumn.DataPropertyName = "List";
+            this.listDataGridViewTextBoxColumn.HeaderText = "List";
+            this.listDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.listDataGridViewTextBoxColumn.Name = "listDataGridViewTextBoxColumn";
+            this.listDataGridViewTextBoxColumn.ReadOnly = true;
+            this.listDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // aCGRpeakDataGridViewTextBoxColumn
+            // 
+            this.aCGRpeakDataGridViewTextBoxColumn.DataPropertyName = "ACG_Rpeak";
+            this.aCGRpeakDataGridViewTextBoxColumn.HeaderText = "ACG_Rpeak";
+            this.aCGRpeakDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.aCGRpeakDataGridViewTextBoxColumn.Name = "aCGRpeakDataGridViewTextBoxColumn";
+            this.aCGRpeakDataGridViewTextBoxColumn.ReadOnly = true;
+            this.aCGRpeakDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // detail2BindingSource
+            // 
+            this.detail2BindingSource.DataMember = "Detail2";
+            this.detail2BindingSource.DataSource = this.detailDataSet1;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.AutoScroll = true;
+            this.tabPage3.Controls.Add(this.dataGridView3);
+            this.tabPage3.Controls.Add(this.comboBox1);
+            this.tabPage3.Location = new System.Drawing.Point(4, 28);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(803, 434);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Q2";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AllowUserToAddRows = false;
+            this.dataGridView3.AllowUserToDeleteRows = false;
+            this.dataGridView3.AutoGenerateColumns = false;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.continentDataGridViewTextBoxColumn,
+            this.numComputerDataGridViewTextBoxColumn});
+            this.dataGridView3.DataSource = this.location1BindingSource2;
+            this.dataGridView3.Location = new System.Drawing.Point(56, 35);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.ReadOnly = true;
+            this.dataGridView3.RowHeadersWidth = 62;
+            this.dataGridView3.RowTemplate.Height = 31;
+            this.dataGridView3.Size = new System.Drawing.Size(703, 367);
+            this.dataGridView3.TabIndex = 1;
+            // 
+            // continentDataGridViewTextBoxColumn
+            // 
+            this.continentDataGridViewTextBoxColumn.DataPropertyName = "continent";
+            this.continentDataGridViewTextBoxColumn.HeaderText = "continent";
+            this.continentDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.continentDataGridViewTextBoxColumn.Name = "continentDataGridViewTextBoxColumn";
+            this.continentDataGridViewTextBoxColumn.ReadOnly = true;
+            this.continentDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // numComputerDataGridViewTextBoxColumn
+            // 
+            this.numComputerDataGridViewTextBoxColumn.DataPropertyName = "numComputer";
+            this.numComputerDataGridViewTextBoxColumn.HeaderText = "numComputer";
+            this.numComputerDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.numComputerDataGridViewTextBoxColumn.Name = "numComputerDataGridViewTextBoxColumn";
+            this.numComputerDataGridViewTextBoxColumn.ReadOnly = true;
+            this.numComputerDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // location1BindingSource2
+            // 
+            this.location1BindingSource2.DataMember = "Location1";
+            this.location1BindingSource2.DataSource = this.lLSDataSet2;
+            // 
+            // lLSDataSet2
+            // 
+            this.lLSDataSet2.DataSetName = "lLSDataSet";
+            this.lLSDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DataSource = this.listBindingSource3;
+            this.comboBox1.DisplayMember = "value";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(56, 3);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(703, 26);
+            this.comboBox1.TabIndex = 0;
+            this.comboBox1.ValueMember = "value";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
+            // 
+            // listBindingSource3
+            // 
+            this.listBindingSource3.DataMember = "list";
+            this.listBindingSource3.DataSource = this.lLSDataSet3;
+            // 
+            // lLSDataSet3
+            // 
+            this.lLSDataSet3.DataSetName = "lLSDataSet";
+            this.lLSDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // detailBindingSource2
+            // 
+            this.detailBindingSource2.DataMember = "Detail";
+            this.detailBindingSource2.DataSource = this.lLSDataSet2;
+            // 
+            // location1BindingSource1
+            // 
+            this.location1BindingSource1.DataMember = "Location1";
+            this.location1BindingSource1.DataSource = this.lLSDataSet1;
+            // 
+            // lLSDataSet1
+            // 
+            this.lLSDataSet1.DataSetName = "lLSDataSet";
+            this.lLSDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // listBindingSource1
+            // 
+            this.listBindingSource1.DataMember = "list";
+            this.listBindingSource1.DataSource = this.lLSDataSet1;
+            // 
+            // listBindingSource
+            // 
+            this.listBindingSource.DataMember = "list";
+            this.listBindingSource.DataSource = this.lLSDataSet;
+            // 
+            // lLSDataSet
+            // 
+            this.lLSDataSet.DataSetName = "lLSDataSet";
+            this.lLSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // detail1BindingSource8
             // 
@@ -233,51 +438,78 @@
             this.detail1BindingSource7.DataMember = "Detail1";
             this.detail1BindingSource7.DataSource = this.detailDataSet1;
             // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.listDataGridViewTextBoxColumn,
-            this.aCGRpeakDataGridViewTextBoxColumn});
-            this.dataGridView2.DataSource = this.detail2BindingSource;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.RowHeadersWidth = 62;
-            this.dataGridView2.RowTemplate.Height = 31;
-            this.dataGridView2.Size = new System.Drawing.Size(797, 428);
-            this.dataGridView2.TabIndex = 0;
-            // 
-            // detail2BindingSource
-            // 
-            this.detail2BindingSource.DataMember = "Detail2";
-            this.detail2BindingSource.DataSource = this.detailDataSet1;
-            // 
             // detail2TableAdapter
             // 
             this.detail2TableAdapter.ClearBeforeFill = true;
             // 
-            // listDataGridViewTextBoxColumn
+            // listTableAdapter
             // 
-            this.listDataGridViewTextBoxColumn.DataPropertyName = "List";
-            this.listDataGridViewTextBoxColumn.HeaderText = "List";
-            this.listDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.listDataGridViewTextBoxColumn.Name = "listDataGridViewTextBoxColumn";
-            this.listDataGridViewTextBoxColumn.ReadOnly = true;
-            this.listDataGridViewTextBoxColumn.Width = 150;
+            this.listTableAdapter.ClearBeforeFill = true;
             // 
-            // aCGRpeakDataGridViewTextBoxColumn
+            // location1BindingSource
             // 
-            this.aCGRpeakDataGridViewTextBoxColumn.DataPropertyName = "ACG_Rpeak";
-            this.aCGRpeakDataGridViewTextBoxColumn.HeaderText = "ACG_Rpeak";
-            this.aCGRpeakDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.aCGRpeakDataGridViewTextBoxColumn.Name = "aCGRpeakDataGridViewTextBoxColumn";
-            this.aCGRpeakDataGridViewTextBoxColumn.ReadOnly = true;
-            this.aCGRpeakDataGridViewTextBoxColumn.Width = 150;
+            this.location1BindingSource.DataMember = "Location1";
+            this.location1BindingSource.DataSource = this.lLSDataSet;
+            // 
+            // location1TableAdapter
+            // 
+            this.location1TableAdapter.ClearBeforeFill = true;
+            // 
+            // detailBindingSource1
+            // 
+            this.detailBindingSource1.DataMember = "Detail";
+            this.detailBindingSource1.DataSource = this.lLSDataSet1;
+            // 
+            // detailTableAdapter1
+            // 
+            this.detailTableAdapter1.ClearBeforeFill = true;
+            // 
+            // listBindingSource2
+            // 
+            this.listBindingSource2.DataMember = "list";
+            this.listBindingSource2.DataSource = this.lLSDataSet2;
+            // 
+            // listDetailBindingSource
+            // 
+            this.listDetailBindingSource.DataMember = "list_Detail";
+            this.listDetailBindingSource.DataSource = this.listBindingSource2;
+            // 
+            // dlDataSet
+            // 
+            this.dlDataSet.DataSetName = "DlDataSet";
+            this.dlDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // list1BindingSource
+            // 
+            this.list1BindingSource.DataMember = "list1";
+            this.list1BindingSource.DataSource = this.dlDataSet;
+            // 
+            // list1TableAdapter
+            // 
+            this.list1TableAdapter.ClearBeforeFill = true;
+            // 
+            // detail1BindingSource9
+            // 
+            this.detail1BindingSource9.DataMember = "Detail1";
+            this.detail1BindingSource9.DataSource = this.dlDataSet;
+            // 
+            // detail1TableAdapter1
+            // 
+            this.detail1TableAdapter1.ClearBeforeFill = true;
+            // 
+            // detailBindingSource3
+            // 
+            this.detailBindingSource3.DataMember = "Detail";
+            this.detailBindingSource3.DataSource = this.lLSDataSet2;
+            // 
+            // detail11BindingSource
+            // 
+            this.detail11BindingSource.DataMember = "Detail11";
+            this.detail11BindingSource.DataSource = this.dlDataSet;
+            // 
+            // detail11TableAdapter
+            // 
+            this.detail11TableAdapter.ClearBeforeFill = true;
             // 
             // Form1
             // 
@@ -291,9 +523,23 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.detail1BindingSource6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.detailDataSet1)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detail2BindingSource)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.location1BindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lLSDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lLSDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detailBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.location1BindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lLSDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lLSDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.detail1BindingSource8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.detail1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.detailBindingSource)).EndInit();
@@ -307,8 +553,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.detail1BindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.detail1BindingSource5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.detail1BindingSource7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.detail2BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.location1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detailBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listDetailBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dlDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.list1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detail1BindingSource9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detailBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detail11BindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -342,6 +595,36 @@
         private DetailDataSetTableAdapters.Detail2TableAdapter detail2TableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn listDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn aCGRpeakDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TabPage tabPage3;
+        private lLSDataSet lLSDataSet;
+        private System.Windows.Forms.BindingSource listBindingSource;
+        private lLSDataSetTableAdapters.listTableAdapter listTableAdapter;
+        private System.Windows.Forms.BindingSource location1BindingSource;
+        private lLSDataSetTableAdapters.Location1TableAdapter location1TableAdapter;
+        private lLSDataSet lLSDataSet1;
+        private System.Windows.Forms.BindingSource listBindingSource1;
+        private System.Windows.Forms.BindingSource location1BindingSource1;
+        private System.Windows.Forms.BindingSource detailBindingSource1;
+        private lLSDataSetTableAdapters.DetailTableAdapter detailTableAdapter1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private lLSDataSet lLSDataSet2;
+        private System.Windows.Forms.BindingSource listBindingSource2;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.BindingSource detailBindingSource2;
+        private System.Windows.Forms.BindingSource listDetailBindingSource;
+        private lLSDataSet lLSDataSet3;
+        private System.Windows.Forms.BindingSource listBindingSource3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn continentDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numComputerDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource location1BindingSource2;
+        private DlDataSet dlDataSet;
+        private System.Windows.Forms.BindingSource list1BindingSource;
+        private DlDataSetTableAdapters.list1TableAdapter list1TableAdapter;
+        private System.Windows.Forms.BindingSource detail1BindingSource9;
+        private DlDataSetTableAdapters.Detail1TableAdapter detail1TableAdapter1;
+        private System.Windows.Forms.BindingSource detail11BindingSource;
+        private System.Windows.Forms.BindingSource detailBindingSource3;
+        private DlDataSetTableAdapters.Detail11TableAdapter detail11TableAdapter;
     }
 }
 
