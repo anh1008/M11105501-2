@@ -210,6 +210,26 @@ order by Max(Rpeak) DESC
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TOP5001TableAdapter" GeneratorDataComponentClassName="TOP5001TableAdapter" Name="TOP5001" UserDataComponentName="TOP5001TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="M11105501ConnectionString (Settings)" DbObjectName="M11105501.dbo.TOP500" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT SystemID, AVG(Rank) as AVGRank FROM TOP500
+group by SystemID
+order by AVG(Rank) DESC
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SystemID" DataSetColumn="SystemID" />
+              <Mapping SourceColumn="AVGRank" DataSetColumn="AVGRank" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -269,6 +289,14 @@ order by Max(Rpeak) DESC
             <xs:sequence>
               <xs:element name="SystemID" msprop:Generator_ColumnPropNameInRow="SystemID" msprop:Generator_ColumnPropNameInTable="SystemIDColumn" msprop:Generator_ColumnVarNameInTable="columnSystemID" msprop:Generator_UserColumnName="SystemID" type="xs:int" minOccurs="0" />
               <xs:element name="MaxRpeak" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="MaxRpeak" msprop:Generator_ColumnPropNameInTable="MaxRpeakColumn" msprop:Generator_ColumnVarNameInTable="columnMaxRpeak" msprop:Generator_UserColumnName="MaxRpeak" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TOP5001" msprop:Generator_RowEvHandlerName="TOP5001RowChangeEventHandler" msprop:Generator_RowDeletedName="TOP5001RowDeleted" msprop:Generator_RowDeletingName="TOP5001RowDeleting" msprop:Generator_RowEvArgName="TOP5001RowChangeEvent" msprop:Generator_TablePropName="TOP5001" msprop:Generator_RowChangedName="TOP5001RowChanged" msprop:Generator_RowChangingName="TOP5001RowChanging" msprop:Generator_TableClassName="TOP5001DataTable" msprop:Generator_RowClassName="TOP5001Row" msprop:Generator_TableVarName="tableTOP5001" msprop:Generator_UserTableName="TOP5001">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SystemID" msprop:Generator_ColumnPropNameInRow="SystemID" msprop:Generator_ColumnPropNameInTable="SystemIDColumn" msprop:Generator_ColumnVarNameInTable="columnSystemID" msprop:Generator_UserColumnName="SystemID" type="xs:int" minOccurs="0" />
+              <xs:element name="AVGRank" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="AVGRank" msprop:Generator_ColumnPropNameInTable="AVGRankColumn" msprop:Generator_ColumnVarNameInTable="columnAVGRank" msprop:Generator_UserColumnName="AVGRank" type="xs:double" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

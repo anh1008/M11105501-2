@@ -19,6 +19,8 @@ namespace M11105501_2Tier
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: 這行程式碼會將資料載入 'tOP500DataSet3.TOP5001' 資料表。您可以視需要進行移動或移除。
+            this.tOP5001TableAdapter.Fill(this.tOP500DataSet3.TOP5001);
             // TODO: 這行程式碼會將資料載入 'tOP500DataSet2.System1' 資料表。您可以視需要進行移動或移除。
             this.system1TableAdapter.Fill(this.tOP500DataSet2.System1);
             // TODO: 這行程式碼會將資料載入 'tOP500DataSet1.System1' 資料表。您可以視需要進行移動或移除。
