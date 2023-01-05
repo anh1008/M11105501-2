@@ -19,6 +19,16 @@ namespace M11105501_2Tier
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: 這行程式碼會將資料載入 'concouDataSet.country' 資料表。您可以視需要進行移動或移除。
+            this.countryTableAdapter.Fill(this.concouDataSet.country);
+            // TODO: 這行程式碼會將資料載入 'concouDataSet.Continent' 資料表。您可以視需要進行移動或移除。
+            this.continentTableAdapter1.Fill(this.concouDataSet.Continent);
+            // TODO: 這行程式碼會將資料載入 'conLoDataSet1.Continent' 資料表。您可以視需要進行移動或移除。
+            this.continentTableAdapter.Fill(this.conLoDataSet1.Continent);
+            // TODO: 這行程式碼會將資料載入 'conLoDataSet.Location' 資料表。您可以視需要進行移動或移除。
+            this.locationTableAdapter.Fill(this.conLoDataSet.Location);
+            // TODO: 這行程式碼會將資料載入 'conLoDataSet.Continent' 資料表。您可以視需要進行移動或移除。
+            this.continentTableAdapter.Fill(this.conLoDataSet.Continent);
             // TODO: 這行程式碼會將資料載入 'dlDataSet.Detail1' 資料表。您可以視需要進行移動或移除。
             //this.detail1TableAdapter1.Fill(this.dlDataSet.Detail1);
             // TODO: 這行程式碼會將資料載入 'dlDataSet.list1' 資料表。您可以視需要進行移動或移除。
@@ -310,5 +320,38 @@ namespace M11105501_2Tier
         {
             detail11TableAdapter.Fill(this.dlDataSet.Detail11, comboBox1.SelectedIndex);
         }
+
+        private void fillByToolStripButton_Click_8(object sender, EventArgs e)
+        {
+            try
+            {
+               // this.locationTableAdapter.FillBy(this.conLoDataSet.Location, cToolStripTextBox.Text);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void comboBox2_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            locationTableAdapter.FillBy(this.conLoDataSet.Location, comboBox2.SelectedText);
+        }
+
+        private void fillByToolStripButton_Click_9(object sender, EventArgs e)
+        {
+            try
+            {
+                //this.locationTableAdapter.FillBy(this.conLoDataSet.Location, cToolStripTextBox.Text);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        
     }
 }

@@ -50,6 +50,10 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.listBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.lLSDataSet3 = new M11105501_2Tier.lLSDataSet();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.locationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.conLoDataSet = new M11105501_2Tier.ConLoDataSet();
+            this.continentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.detailBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.location1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.lLSDataSet1 = new M11105501_2Tier.lLSDataSet();
@@ -87,6 +91,24 @@
             this.detailBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.detail11BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.detail11TableAdapter = new M11105501_2Tier.DlDataSetTableAdapters.Detail11TableAdapter();
+            this.continentTableAdapter = new M11105501_2Tier.ConLoDataSetTableAdapters.ContinentTableAdapter();
+            this.locationTableAdapter = new M11105501_2Tier.ConLoDataSetTableAdapters.LocationTableAdapter();
+            this.locationBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.conLoDataSet1 = new M11105501_2Tier.ConLoDataSet();
+            this.continentBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.location1BindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.location1TableAdapter1 = new M11105501_2Tier.ConLoDataSetTableAdapters.Location1TableAdapter();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.concouDataSet = new M11105501_2Tier.ConcouDataSet();
+            this.continentBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.continentTableAdapter1 = new M11105501_2Tier.ConcouDataSetTableAdapters.ContinentTableAdapter();
+            this.countryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.countryTableAdapter = new M11105501_2Tier.ConcouDataSetTableAdapters.countryTableAdapter();
+            this.fKcountryContine693CA210BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.continentDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -101,6 +123,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.lLSDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lLSDataSet3)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.locationBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.conLoDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.continentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detailBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.location1BindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lLSDataSet1)).BeginInit();
@@ -129,6 +155,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.detail1BindingSource9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detailBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detail11BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.locationBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.conLoDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.continentBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.location1BindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.concouDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.continentBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.countryBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKcountryContine693CA210BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -136,6 +171,8 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Location = new System.Drawing.Point(3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -335,6 +372,34 @@
             this.lLSDataSet3.DataSetName = "lLSDataSet";
             this.lLSDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // tabPage4
+            // 
+            this.tabPage4.AutoScroll = true;
+            this.tabPage4.Controls.Add(this.dataGridView4);
+            this.tabPage4.Controls.Add(this.comboBox2);
+            this.tabPage4.Location = new System.Drawing.Point(4, 28);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(803, 434);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Q3";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // locationBindingSource
+            // 
+            this.locationBindingSource.DataMember = "Location";
+            this.locationBindingSource.DataSource = this.conLoDataSet;
+            // 
+            // conLoDataSet
+            // 
+            this.conLoDataSet.DataSetName = "ConLoDataSet";
+            this.conLoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // continentBindingSource
+            // 
+            this.continentBindingSource.DataMember = "Continent";
+            this.continentBindingSource.DataSource = this.conLoDataSet;
+            // 
             // detailBindingSource2
             // 
             this.detailBindingSource2.DataMember = "Detail";
@@ -511,6 +576,123 @@
             // 
             this.detail11TableAdapter.ClearBeforeFill = true;
             // 
+            // continentTableAdapter
+            // 
+            this.continentTableAdapter.ClearBeforeFill = true;
+            // 
+            // locationTableAdapter
+            // 
+            this.locationTableAdapter.ClearBeforeFill = true;
+            // 
+            // locationBindingSource1
+            // 
+            this.locationBindingSource1.DataMember = "Location";
+            this.locationBindingSource1.DataSource = this.conLoDataSet;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Location = new System.Drawing.Point(4, 28);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(803, 434);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Q4";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // conLoDataSet1
+            // 
+            this.conLoDataSet1.DataSetName = "ConLoDataSet";
+            this.conLoDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // continentBindingSource1
+            // 
+            this.continentBindingSource1.DataMember = "Continent";
+            this.continentBindingSource1.DataSource = this.conLoDataSet1;
+            // 
+            // location1BindingSource3
+            // 
+            this.location1BindingSource3.DataMember = "Location1";
+            this.location1BindingSource3.DataSource = this.conLoDataSet1;
+            // 
+            // location1TableAdapter1
+            // 
+            this.location1TableAdapter1.ClearBeforeFill = true;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DataSource = this.continentBindingSource2;
+            this.comboBox2.DisplayMember = "Name";
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(114, 35);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(619, 26);
+            this.comboBox2.TabIndex = 0;
+            this.comboBox2.ValueMember = "ContinentID";
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.AllowUserToAddRows = false;
+            this.dataGridView4.AllowUserToDeleteRows = false;
+            this.dataGridView4.AutoGenerateColumns = false;
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nameDataGridViewTextBoxColumn,
+            this.continentDataGridViewTextBoxColumn1});
+            this.dataGridView4.DataSource = this.fKcountryContine693CA210BindingSource;
+            this.dataGridView4.Location = new System.Drawing.Point(114, 76);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.ReadOnly = true;
+            this.dataGridView4.RowHeadersWidth = 62;
+            this.dataGridView4.RowTemplate.Height = 31;
+            this.dataGridView4.Size = new System.Drawing.Size(619, 320);
+            this.dataGridView4.TabIndex = 1;
+            // 
+            // concouDataSet
+            // 
+            this.concouDataSet.DataSetName = "ConcouDataSet";
+            this.concouDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // continentBindingSource2
+            // 
+            this.continentBindingSource2.DataMember = "Continent";
+            this.continentBindingSource2.DataSource = this.concouDataSet;
+            // 
+            // continentTableAdapter1
+            // 
+            this.continentTableAdapter1.ClearBeforeFill = true;
+            // 
+            // countryBindingSource
+            // 
+            this.countryBindingSource.DataMember = "country";
+            this.countryBindingSource.DataSource = this.concouDataSet;
+            // 
+            // countryTableAdapter
+            // 
+            this.countryTableAdapter.ClearBeforeFill = true;
+            // 
+            // fKcountryContine693CA210BindingSource
+            // 
+            this.fKcountryContine693CA210BindingSource.DataMember = "FK__country__Contine__693CA210";
+            this.fKcountryContine693CA210BindingSource.DataSource = this.continentBindingSource2;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nameDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // continentDataGridViewTextBoxColumn1
+            // 
+            this.continentDataGridViewTextBoxColumn1.DataPropertyName = "Continent";
+            this.continentDataGridViewTextBoxColumn1.HeaderText = "Continent";
+            this.continentDataGridViewTextBoxColumn1.MinimumWidth = 8;
+            this.continentDataGridViewTextBoxColumn1.Name = "continentDataGridViewTextBoxColumn1";
+            this.continentDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.continentDataGridViewTextBoxColumn1.Width = 150;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -534,6 +716,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.lLSDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lLSDataSet3)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.locationBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.conLoDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.continentBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.detailBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.location1BindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lLSDataSet1)).EndInit();
@@ -562,6 +748,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.detail1BindingSource9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.detailBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.detail11BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.locationBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.conLoDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.continentBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.location1BindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.concouDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.continentBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.countryBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKcountryContine693CA210BindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -625,6 +820,28 @@
         private System.Windows.Forms.BindingSource detail11BindingSource;
         private System.Windows.Forms.BindingSource detailBindingSource3;
         private DlDataSetTableAdapters.Detail11TableAdapter detail11TableAdapter;
+        private System.Windows.Forms.TabPage tabPage4;
+        private ConLoDataSet conLoDataSet;
+        private System.Windows.Forms.BindingSource continentBindingSource;
+        private ConLoDataSetTableAdapters.ContinentTableAdapter continentTableAdapter;
+        private System.Windows.Forms.BindingSource locationBindingSource;
+        private ConLoDataSetTableAdapters.LocationTableAdapter locationTableAdapter;
+        private System.Windows.Forms.BindingSource locationBindingSource1;
+        private System.Windows.Forms.TabPage tabPage5;
+        private ConLoDataSet conLoDataSet1;
+        private System.Windows.Forms.BindingSource continentBindingSource1;
+        private System.Windows.Forms.BindingSource location1BindingSource3;
+        private ConLoDataSetTableAdapters.Location1TableAdapter location1TableAdapter1;
+        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private ConcouDataSet concouDataSet;
+        private System.Windows.Forms.BindingSource continentBindingSource2;
+        private ConcouDataSetTableAdapters.ContinentTableAdapter continentTableAdapter1;
+        private System.Windows.Forms.BindingSource countryBindingSource;
+        private ConcouDataSetTableAdapters.countryTableAdapter countryTableAdapter;
+        private System.Windows.Forms.BindingSource fKcountryContine693CA210BindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn continentDataGridViewTextBoxColumn1;
     }
 }
 

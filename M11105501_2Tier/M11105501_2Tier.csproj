@@ -46,6 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConcouDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConcouDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ConLoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConLoDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DetailDataSet.cs">
       <DependentUpon>DetailDataSet.xsd</DependentUpon>
     </Compile>
@@ -59,11 +69,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DlDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="All.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="All.Designer.cs">
+      <DependentUpon>All.cs</DependentUpon>
     </Compile>
     <Compile Include="ListDetailDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -82,8 +92,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>testDataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="All.resx">
+      <DependentUpon>All.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -94,6 +104,28 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="ConcouDataSet.xsc">
+      <DependentUpon>ConcouDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ConcouDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ConcouDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ConcouDataSet.xss">
+      <DependentUpon>ConcouDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ConLoDataSet.xsc">
+      <DependentUpon>ConLoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ConLoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ConLoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ConLoDataSet.xss">
+      <DependentUpon>ConLoDataSet.xsd</DependentUpon>
+    </None>
     <None Include="DetailDataSet.xsc">
       <DependentUpon>DetailDataSet.xsd</DependentUpon>
     </None>
