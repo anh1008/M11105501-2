@@ -20,9 +20,9 @@ namespace M11105501_2Tier
         private void Form1_Load(object sender, EventArgs e)
         {
             // TODO: 這行程式碼會將資料載入 'dlDataSet.Detail1' 資料表。您可以視需要進行移動或移除。
-            this.detail1TableAdapter1.Fill(this.dlDataSet.Detail1);
+            //this.detail1TableAdapter1.Fill(this.dlDataSet.Detail1);
             // TODO: 這行程式碼會將資料載入 'dlDataSet.list1' 資料表。您可以視需要進行移動或移除。
-            this.list1TableAdapter.Fill(this.dlDataSet.list1);
+            //this.list1TableAdapter.Fill(this.dlDataSet.list1);
             // TODO: 這行程式碼會將資料載入 'lLSDataSet3.list' 資料表。您可以視需要進行移動或移除。
             this.listTableAdapter.Fill(this.lLSDataSet3.list);
             // TODO: 這行程式碼會將資料載入 'lLSDataSet2.Detail' 資料表。您可以視需要進行移動或移除。
