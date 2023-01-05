@@ -37,9 +37,6 @@
             this.detail1BindingSource6 = new System.Windows.Forms.BindingSource(this.components);
             this.detailDataSet1 = new M11105501_2Tier.DetailDataSet();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.listDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aCGRpeakDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.detail2BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
@@ -174,13 +171,29 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.tOP500DataSet = new M11105501_2Tier.TOP500DataSet();
+            this.systemBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.systemTableAdapter1 = new M11105501_2Tier.TOP500DataSetTableAdapters.SystemTableAdapter();
+            this.tableAdapterManager = new M11105501_2Tier.TOP500DataSetTableAdapters.TableAdapterManager();
+            this.aCGRpeakDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.listDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.system1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.system1TableAdapter = new M11105501_2Tier.TOP500DataSetTableAdapters.System1TableAdapter();
+            this.tOP500DataSet1 = new M11105501_2Tier.TOP500DataSet();
+            this.system1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.label2 = new System.Windows.Forms.Label();
+            this.dataGridView7 = new System.Windows.Forms.DataGridView();
+            this.tOP500DataSet2 = new M11105501_2Tier.TOP500DataSet();
+            this.system1BindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.systemIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maxRpeakDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detail1BindingSource6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detailDataSet1)).BeginInit();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detail2BindingSource)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -265,6 +278,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.systemBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKTOP500SystemID48CFD27EBindingSource)).BeginInit();
             this.fillByToolStrip.SuspendLayout();
+            this.tabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tOP500DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.systemBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.system1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tOP500DataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.system1BindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tOP500DataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.system1BindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -352,43 +375,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Q1-2";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.listDataGridViewTextBoxColumn,
-            this.aCGRpeakDataGridViewTextBoxColumn});
-            this.dataGridView2.DataSource = this.detail2BindingSource;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.RowHeadersWidth = 62;
-            this.dataGridView2.RowTemplate.Height = 31;
-            this.dataGridView2.Size = new System.Drawing.Size(797, 428);
-            this.dataGridView2.TabIndex = 0;
-            // 
-            // listDataGridViewTextBoxColumn
-            // 
-            this.listDataGridViewTextBoxColumn.DataPropertyName = "List";
-            this.listDataGridViewTextBoxColumn.HeaderText = "List";
-            this.listDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.listDataGridViewTextBoxColumn.Name = "listDataGridViewTextBoxColumn";
-            this.listDataGridViewTextBoxColumn.ReadOnly = true;
-            this.listDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // aCGRpeakDataGridViewTextBoxColumn
-            // 
-            this.aCGRpeakDataGridViewTextBoxColumn.DataPropertyName = "ACG_Rpeak";
-            this.aCGRpeakDataGridViewTextBoxColumn.HeaderText = "ACG_Rpeak";
-            this.aCGRpeakDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.aCGRpeakDataGridViewTextBoxColumn.Name = "aCGRpeakDataGridViewTextBoxColumn";
-            this.aCGRpeakDataGridViewTextBoxColumn.ReadOnly = true;
-            this.aCGRpeakDataGridViewTextBoxColumn.Width = 150;
             // 
             // detail2BindingSource
             // 
@@ -1159,41 +1145,41 @@
             // rankHToolStripLabel
             // 
             this.rankHToolStripLabel.Name = "rankHToolStripLabel";
-            this.rankHToolStripLabel.Size = new System.Drawing.Size(71, 20);
+            this.rankHToolStripLabel.Size = new System.Drawing.Size(71, 27);
             this.rankHToolStripLabel.Text = "RankH:";
             // 
             // rankHToolStripTextBox
             // 
             this.rankHToolStripTextBox.Name = "rankHToolStripTextBox";
-            this.rankHToolStripTextBox.Size = new System.Drawing.Size(100, 30);
+            this.rankHToolStripTextBox.Size = new System.Drawing.Size(100, 32);
             // 
             // rankLToolStripLabel
             // 
             this.rankLToolStripLabel.Name = "rankLToolStripLabel";
-            this.rankLToolStripLabel.Size = new System.Drawing.Size(66, 23);
+            this.rankLToolStripLabel.Size = new System.Drawing.Size(66, 27);
             this.rankLToolStripLabel.Text = "RankL:";
             // 
             // rankLToolStripTextBox
             // 
             this.rankLToolStripTextBox.Name = "rankLToolStripTextBox";
-            this.rankLToolStripTextBox.Size = new System.Drawing.Size(100, 30);
+            this.rankLToolStripTextBox.Size = new System.Drawing.Size(100, 32);
             // 
             // listIDToolStripLabel
             // 
             this.listIDToolStripLabel.Name = "listIDToolStripLabel";
-            this.listIDToolStripLabel.Size = new System.Drawing.Size(62, 23);
+            this.listIDToolStripLabel.Size = new System.Drawing.Size(62, 27);
             this.listIDToolStripLabel.Text = "ListID:";
             // 
             // listIDToolStripTextBox
             // 
             this.listIDToolStripTextBox.Name = "listIDToolStripTextBox";
-            this.listIDToolStripTextBox.Size = new System.Drawing.Size(100, 30);
+            this.listIDToolStripTextBox.Size = new System.Drawing.Size(100, 32);
             // 
             // fillByToolStripButton
             // 
             this.fillByToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.fillByToolStripButton.Name = "fillByToolStripButton";
-            this.fillByToolStripButton.Size = new System.Drawing.Size(71, 33);
+            this.fillByToolStripButton.Size = new System.Drawing.Size(71, 27);
             this.fillByToolStripButton.Text = "Search";
             this.fillByToolStripButton.Click += new System.EventHandler(this.fillByToolStripButton_Click_12);
             // 
@@ -1208,12 +1194,15 @@
             // 
             // tabPage7
             // 
+            this.tabPage7.AutoScroll = true;
+            this.tabPage7.Controls.Add(this.dataGridView7);
+            this.tabPage7.Controls.Add(this.label2);
             this.tabPage7.Location = new System.Drawing.Point(4, 28);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage7.Size = new System.Drawing.Size(803, 434);
             this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "tabPage7";
+            this.tabPage7.Text = "Bonus1";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
             // tabPage8
@@ -1223,8 +1212,140 @@
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage8.Size = new System.Drawing.Size(803, 434);
             this.tabPage8.TabIndex = 7;
-            this.tabPage8.Text = "tabPage8";
+            this.tabPage8.Text = "Bonus2";
             this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // tOP500DataSet
+            // 
+            this.tOP500DataSet.DataSetName = "TOP500DataSet";
+            this.tOP500DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // systemBindingSource1
+            // 
+            this.systemBindingSource1.DataMember = "System";
+            this.systemBindingSource1.DataSource = this.tOP500DataSet;
+            // 
+            // systemTableAdapter1
+            // 
+            this.systemTableAdapter1.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.SystemTableAdapter = this.systemTableAdapter1;
+            this.tableAdapterManager.TOP500TableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = M11105501_2Tier.TOP500DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // aCGRpeakDataGridViewTextBoxColumn
+            // 
+            this.aCGRpeakDataGridViewTextBoxColumn.DataPropertyName = "ACG_Rpeak";
+            this.aCGRpeakDataGridViewTextBoxColumn.HeaderText = "ACG_Rpeak";
+            this.aCGRpeakDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.aCGRpeakDataGridViewTextBoxColumn.Name = "aCGRpeakDataGridViewTextBoxColumn";
+            this.aCGRpeakDataGridViewTextBoxColumn.ReadOnly = true;
+            this.aCGRpeakDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // listDataGridViewTextBoxColumn
+            // 
+            this.listDataGridViewTextBoxColumn.DataPropertyName = "List";
+            this.listDataGridViewTextBoxColumn.HeaderText = "List";
+            this.listDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.listDataGridViewTextBoxColumn.Name = "listDataGridViewTextBoxColumn";
+            this.listDataGridViewTextBoxColumn.ReadOnly = true;
+            this.listDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.listDataGridViewTextBoxColumn,
+            this.aCGRpeakDataGridViewTextBoxColumn});
+            this.dataGridView2.DataSource = this.detail2BindingSource;
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView2.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.RowHeadersWidth = 62;
+            this.dataGridView2.RowTemplate.Height = 31;
+            this.dataGridView2.Size = new System.Drawing.Size(797, 428);
+            this.dataGridView2.TabIndex = 0;
+            // 
+            // system1BindingSource
+            // 
+            this.system1BindingSource.DataSource = this.tOP500DataSet;
+            this.system1BindingSource.Position = 0;
+            // 
+            // system1TableAdapter
+            // 
+            this.system1TableAdapter.ClearBeforeFill = true;
+            // 
+            // tOP500DataSet1
+            // 
+            this.tOP500DataSet1.DataSetName = "TOP500DataSet";
+            this.tOP500DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // system1BindingSource1
+            // 
+            this.system1BindingSource1.DataMember = "System1";
+            this.system1BindingSource1.DataSource = this.tOP500DataSet1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(21, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(331, 18);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Find & sort each system\'s max Rpeak in all lists";
+            // 
+            // dataGridView7
+            // 
+            this.dataGridView7.AllowUserToAddRows = false;
+            this.dataGridView7.AllowUserToDeleteRows = false;
+            this.dataGridView7.AutoGenerateColumns = false;
+            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView7.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.systemIDDataGridViewTextBoxColumn,
+            this.maxRpeakDataGridViewTextBoxColumn});
+            this.dataGridView7.DataSource = this.system1BindingSource2;
+            this.dataGridView7.Location = new System.Drawing.Point(24, 44);
+            this.dataGridView7.Name = "dataGridView7";
+            this.dataGridView7.ReadOnly = true;
+            this.dataGridView7.RowHeadersWidth = 62;
+            this.dataGridView7.RowTemplate.Height = 31;
+            this.dataGridView7.Size = new System.Drawing.Size(758, 371);
+            this.dataGridView7.TabIndex = 2;
+            // 
+            // tOP500DataSet2
+            // 
+            this.tOP500DataSet2.DataSetName = "TOP500DataSet";
+            this.tOP500DataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // system1BindingSource2
+            // 
+            this.system1BindingSource2.DataMember = "System1";
+            this.system1BindingSource2.DataSource = this.tOP500DataSet2;
+            // 
+            // systemIDDataGridViewTextBoxColumn
+            // 
+            this.systemIDDataGridViewTextBoxColumn.DataPropertyName = "SystemID";
+            this.systemIDDataGridViewTextBoxColumn.HeaderText = "SystemID";
+            this.systemIDDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.systemIDDataGridViewTextBoxColumn.Name = "systemIDDataGridViewTextBoxColumn";
+            this.systemIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.systemIDDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // maxRpeakDataGridViewTextBoxColumn
+            // 
+            this.maxRpeakDataGridViewTextBoxColumn.DataPropertyName = "MaxRpeak";
+            this.maxRpeakDataGridViewTextBoxColumn.HeaderText = "MaxRpeak";
+            this.maxRpeakDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.maxRpeakDataGridViewTextBoxColumn.Name = "maxRpeakDataGridViewTextBoxColumn";
+            this.maxRpeakDataGridViewTextBoxColumn.ReadOnly = true;
+            this.maxRpeakDataGridViewTextBoxColumn.Width = 150;
             // 
             // Form1
             // 
@@ -1241,7 +1362,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.detail1BindingSource6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.detailDataSet1)).EndInit();
             this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.detail2BindingSource)).EndInit();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
@@ -1328,6 +1448,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.fKTOP500SystemID48CFD27EBindingSource)).EndInit();
             this.fillByToolStrip.ResumeLayout(false);
             this.fillByToolStrip.PerformLayout();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tOP500DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.systemBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.system1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tOP500DataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.system1BindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tOP500DataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.system1BindingSource2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1356,11 +1487,8 @@
         private System.Windows.Forms.BindingSource detail1BindingSource6;
         private System.Windows.Forms.BindingSource detail1BindingSource7;
         private System.Windows.Forms.BindingSource detail1BindingSource8;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.BindingSource detail2BindingSource;
         private DetailDataSetTableAdapters.Detail2TableAdapter detail2TableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn listDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn aCGRpeakDataGridViewTextBoxColumn;
         private System.Windows.Forms.TabPage tabPage3;
         private lLSDataSet lLSDataSet;
         private System.Windows.Forms.BindingSource listBindingSource;
@@ -1478,6 +1606,23 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.TabPage tabPage8;
+        private TOP500DataSet tOP500DataSet;
+        private System.Windows.Forms.BindingSource systemBindingSource1;
+        private TOP500DataSetTableAdapters.SystemTableAdapter systemTableAdapter1;
+        private TOP500DataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn listDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn aCGRpeakDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource system1BindingSource;
+        private TOP500DataSetTableAdapters.System1TableAdapter system1TableAdapter;
+        private TOP500DataSet tOP500DataSet1;
+        private System.Windows.Forms.BindingSource system1BindingSource1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView dataGridView7;
+        private TOP500DataSet tOP500DataSet2;
+        private System.Windows.Forms.BindingSource system1BindingSource2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn systemIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maxRpeakDataGridViewTextBoxColumn;
     }
 }
 

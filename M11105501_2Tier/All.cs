@@ -19,6 +19,14 @@ namespace M11105501_2Tier
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: 這行程式碼會將資料載入 'tOP500DataSet2.System1' 資料表。您可以視需要進行移動或移除。
+            this.system1TableAdapter.Fill(this.tOP500DataSet2.System1);
+            // TODO: 這行程式碼會將資料載入 'tOP500DataSet1.System1' 資料表。您可以視需要進行移動或移除。
+            this.system1TableAdapter.Fill(this.tOP500DataSet1.System1);
+            // TODO: 這行程式碼會將資料載入 'tOP500DataSet.System1' 資料表。您可以視需要進行移動或移除。
+            this.system1TableAdapter.Fill(this.tOP500DataSet.System1);
+            // TODO: 這行程式碼會將資料載入 'tOP500DataSet.System' 資料表。您可以視需要進行移動或移除。
+            this.systemTableAdapter1.Fill(this.tOP500DataSet.System);
             // TODO: 這行程式碼會將資料載入 'q5_2DataSet.Computers_1' 資料表。您可以視需要進行移動或移除。
             this.computers_1TableAdapter.Fill(this.q5_2DataSet.Computers_1);
             // TODO: 這行程式碼會將資料載入 'q5_2DataSet.list_1' 資料表。您可以視需要進行移動或移除。
@@ -429,6 +437,19 @@ namespace M11105501_2Tier
 
         private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void fillByToolStripButton1_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                this.systemTableAdapter1.FillBy(this.tOP500DataSet.System);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
 
         }
     }

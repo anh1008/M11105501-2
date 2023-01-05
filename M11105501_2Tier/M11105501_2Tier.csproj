@@ -117,6 +117,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>testDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="TOP500DataSet.cs">
+      <DependentUpon>TOP500DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TOP500DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TOP500DataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="All.resx">
       <DependentUpon>All.cs</DependentUpon>
     </EmbeddedResource>
@@ -269,6 +277,17 @@
     </None>
     <None Include="testDataSet.xss">
       <DependentUpon>testDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TOP500DataSet.xsc">
+      <DependentUpon>TOP500DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TOP500DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TOP500DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TOP500DataSet.xss">
+      <DependentUpon>TOP500DataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
